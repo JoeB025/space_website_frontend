@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(212, 212, 212);
+}
+
+.container {
+  border: 10px green ridge;;
+}
+
+.article-page-title {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+.article-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgba(0, 0, 0);
+  list-style: none; 
+  border: 5px, solid, red;
+}
+
+.article-container {
+  border: ridge rgb(49, 49, 49) 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.main-container {
+  text-align: center;
+  font-size: 10px;
+}
+
+.article-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-image {
+  height: 50%;
+  width: 50%;
+  border-radius: 12px;
+}

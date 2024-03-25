@@ -1,0 +1,49 @@
+.top-bar {
+  color: red;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.nav-left {
+  display: flex;
+  border: 2px solid red;
+  justify-content: space-evenly;
+  width: 30%;
+  color: blue;
+}
+
+.home-link {
+  color: green;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.articles-link {
+  color: green;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-center {
+  display: flex;
+  border: 2px solid red;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.nav-right {
+  display: flex;
+  border: 2px solid red;
+  justify-content: space-evenly;
+  width: 30%;
+}
