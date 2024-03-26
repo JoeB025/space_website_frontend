@@ -14,8 +14,29 @@ const NavBar = () => {
         </div>
 
         <div className="nav-center">
-          <Link to="articles" className="articles-link">All Articles</Link>
+
+          <Link to="articles" className="articles-link">Articles</Link>
+        
+        <div className ='dropdown'>
+          <button className="dropdown-button">
+            <i>Planets</i>
+          </button>
+          <div className='dropdown-content'>
+          <Link to="planets">All Planets</Link>
+            <Link to="Mercury">Mercury</Link>
+            <Link to="Venus">Venus</Link>
+            <Link to="Earth">Earth</Link>
+            <Link to="Mars">Mars</Link>
+            <Link to="Jupiter">Jupiter</Link>
+            <Link to="Saturn">Saturn</Link>
+            <Link to="Uranus">Uranus</Link>
+            <Link to="Neptune">Neptune</Link>
+          </div>
         </div>
+        
+        </div>
+
+        
 
 
 

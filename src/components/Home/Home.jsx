@@ -1,9 +1,37 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
+import { getImages } from "../../utils";
+import { useEffect, useState } from "react"
 
 const Home = () => {
+
+  const [imageList, setImageList] = useState([])
+
+  useEffect(() => {
+    getImages().then((response) => {
+      setImageList(response.data.image)
+      console.log(response.data.image)
+    });
+  }, []);
+
+
   return (
     <>
+
+<ul className="solar-system-planets">
+  {imageList.map((img) => {
+    if (img.name === 'moon1') {
+      return (
+        <li key={img.id}>
+          <img src={img.img_url} alt={img.name} className="home-background-img" />
+        </li>
+      )
+    }
+  })}
+
+</ul>
+
+
       <h1 className="welcome-text">Welcome to the Home page</h1>
       <p className="intro-text">
         Welcome to our celestial haven, where the wonders of the cosmos await

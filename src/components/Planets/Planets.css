@@ -1,0 +1,132 @@
+.container-planets {
+  background-color: black;
+}
+
+.planet-image-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.planet-order-images {
+  width: 10%;
+  height: 10%;
+}
+
+.sun-image-string {
+  width: 45%;
+  border-radius: 1000px;
+}
+
+.mercury-image-string {
+  width: 3%;
+  margin-bottom: -100px;
+  margin-right: 0px;
+}
+
+.venus-image-string {
+  margin-bottom: -50px;
+  margin-left: 400px;
+  width: 5%;
+}
+
+.earth-image-string {
+  margin-bottom: -250px;
+  margin-left: 750px;
+  width: 8%;
+  height: 8%;
+}
+
+.mars-image-string {
+  margin-bottom: -700px;
+  margin-left: 750px;
+  width: 10%;
+}
+
+.jupiter-image-string {
+  margin-bottom: -100px;
+  margin-left: 200px;
+  width: 23%;
+}
+
+.saturn-image-string {
+  margin-top: -150px;
+  margin-right: 500px;
+  width: 14%;
+}
+
+.uranus-image-string {
+  margin-top: -750px;
+  margin-right: 750px;
+  width: 15%;
+}
+
+.neptune-image-string {
+  margin-top: -1250px;
+  margin-right: 650px;
+  width: 10%;
+}
+
+.pluto-image-string {
+  margin-top: -1500px;
+  margin-right: 350px;
+  width: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.planet-page-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: blue;
+}
+
+.planet-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.planet-main-container {
+  border: 5px white solid;
+  color: white;
+}
+
+
+.planet-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet-image {
+  height: 50%;
+  width: 50%;
+  border-radius: 12px;
+  background-color: inherit;
+}
+
+
+
+
+
+
+
+
