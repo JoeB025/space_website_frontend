@@ -93,7 +93,6 @@ let className = "planet-order-images-mid"; // Default className
                 className += " pluto-image-mid";
               }
 
-
               if (planet.name !== "Sun" && planet.name !== "Pluto") {
                 return (
                   <h4 key={planet.name} className="planet-string">

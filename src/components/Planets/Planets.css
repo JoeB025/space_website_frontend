@@ -72,13 +72,13 @@
   text-align: center;
   padding-top: 20px;
   font-size: 30px;
+  margin-bottom: 150px;
 }
 
 .planet-list {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 100px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -89,9 +89,6 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-bottom: solid white 5px;
-  border-top: solid white 5px;
-  padding-top: 10px;
 }
 
 .planet-info-container {
@@ -99,13 +96,15 @@
   font-size: 20px;
   text-align: center;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .planet-name {
   font-size: 40px;
 }
-
-
 
 .mercury-image-mid {
   width: 30%;
@@ -138,10 +137,6 @@
 .neptune-image-mid {
   width: 60%;
 }
-
-
-
-
 
 
 /* planet image bottom section */
