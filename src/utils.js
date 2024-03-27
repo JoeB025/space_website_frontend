@@ -19,3 +19,7 @@ export function getPlanets() {
 export function getImages() {
   return spaceWebsiteApi.get("/api/images");
 }
+
+export function getArticleComments(article_id) {
+  return articlesApi.get(`/api/articles/${article_id}/comments`);
+}
