@@ -71,6 +71,29 @@ export default function Planets() {
           <h3 className="sub-heading">Info on individual planets:</h3>
           <ul className="planet-list">
             {planetList.map((planet) => {
+
+let className = "planet-order-images-mid"; // Default className
+              if (planet.name === "Mercury") {
+                className += " mercury-image-mid";
+              } else if (planet.name === "Venus") {
+                className += " venus-image-mid";
+              } else if (planet.name === "Earth") {
+                className += " earth-image-mid";
+              } else if (planet.name === "Mars") {
+                className += " mars-image-mid";
+              } else if (planet.name === "Jupiter") {
+                className += " jupiter-image-mid";
+              } else if (planet.name === "Saturn") {
+                className += " saturn-image-mid";
+              } else if (planet.name === "Uranus") {
+                className += " uranus-image-mid";
+              } else if (planet.name === "Neptune") {
+                className += " neptune-image-mid";
+              } else if (planet.name === "Pluto") {
+                className += " pluto-image-mid";
+              }
+
+
               if (planet.name !== "Sun" && planet.name !== "Pluto") {
                 return (
                   <h4 key={planet.name} className="planet-string">
@@ -91,7 +114,7 @@ export default function Planets() {
                         <div className="article-image-container">
                           <img
                             src={planet.img_url}
-                            className="planet-image"
+                            className={className}
                             alt={planet.name}
                           />
                         </div>
