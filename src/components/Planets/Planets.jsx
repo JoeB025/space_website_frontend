@@ -26,55 +26,38 @@ export default function Planets() {
 
   return (
     <>
-
-
     <div className="container-planets">
+    <p className="planet-page-title">Welcome to the Planets Page!</p>
 
-
-{/* <ul className="solar-system-planets">
-  {imageList.map((img) => {
-    if (img.name === 'solarSystem8') {
-      return (
-        <li key={img.id}>
-          <img src={img.img_url} alt={img.name} className="solar-system-img" />
-        </li>
-      )
-    }
-  })}
-
-</ul> */}
-
-    <section>
-
-  <ul className="planet-image-list">
+<section className="planet-img-top-section">
+  <ul className="planet-image-list-top">
     {planetList.map((img) => {
-      let className = 'planet-order-images'; // Default className
+      let className = 'planet-order-images-top'; // Default className
       if (img.name === 'Mercury') {
-        className += ' mercury-image-string';
+        className += ' mercury-image-top';
       } else if (img.name === 'Venus') {
-        className += ' venus-image-string';
+        className += ' venus-image-top';
       } else if (img.name === 'Earth') {
-        className += ' earth-image-string';
+        className += ' earth-image-top';
       } else if (img.name === 'Mars') {
-        className += ' mars-image-string';
+        className += ' mars-image-top';
       } else if (img.name === 'Jupiter') {
-        className += ' jupiter-image-string';
+        className += ' jupiter-image-top';
       } else if (img.name === 'Saturn') {
-        className += ' saturn-image-string';
+        className += ' saturn-image-top';
       } else if (img.name === 'Uranus') {
-        className += ' uranus-image-string';
+        className += ' uranus-image-top';
       } else if (img.name === 'Neptune') {
-        className += ' neptune-image-string';
-      } else if (img.name === 'Sun') {
-        className += ' sun-image-string';
+        className += ' neptune-image-top';
       } else if (img.name === 'Pluto') {
-        className += ' pluto-image-string';
-      } 
-
+        className += ' pluto-image-top';
+      }
+      
+      if (img.name !== 'Sun') {
       return (
-        <h1 key={img.name} className="planet-container">
+        <h1 key={img.name}>
           <li>
-            <div className="planet-image-container">
+            <div className="planet-image-container-top">
               <img
                 src={img.img_url}
                 className={className}
@@ -84,6 +67,7 @@ export default function Planets() {
           </li>
         </h1>
       );
+      }
     })}
   </ul>
 </section>
@@ -94,9 +78,10 @@ export default function Planets() {
 
 
       <section>
-        <p className="planet-page-title">Welcome to the Planets Page!</p>
+        <p>Info on individual planets:</p>
       <ul className="planet-list">
       {planetList.map((planet) => {
+        if (planet.name !== 'Sun' && planet.name !== 'Pluto') {
         return (
 
           <h2 key={planet.name} className="planet-string">
@@ -121,6 +106,7 @@ export default function Planets() {
 
           </h2>
         )
+        }
       })}
 
 
@@ -128,6 +114,49 @@ export default function Planets() {
       
       
       </section>
+
+      <section className="planet-img-bottom-section">
+  <ul className="planet-image-list-bottom">
+    {planetList.map((img) => {
+      let className = 'planet-order-images-bottom'; // Default className
+      if (img.name === 'Mercury') {
+        className += ' mercury-image-bottom';
+      } else if (img.name === 'Venus') {
+        className += ' venus-image-bottom';
+      } else if (img.name === 'Earth') {
+        className += ' earth-image-bottom';
+      } else if (img.name === 'Mars') {
+        className += ' mars-image-bottom';
+      } else if (img.name === 'Jupiter') {
+        className += ' jupiter-image-bottom';
+      } else if (img.name === 'Saturn') {
+        className += ' saturn-image-bottom';
+      } else if (img.name === 'Uranus') {
+        className += ' uranus-image-bottom';
+      } else if (img.name === 'Neptune') {
+        className += ' neptune-image-bottom';
+      } else if (img.name === 'Sun') {
+        className += ' sun-image-bottom';
+      } else if (img.name === 'Pluto') {
+        className += ' pluto-image-bottom';
+      } 
+
+      return (
+        <h1 key={img.name}>
+          <li>
+            <div className="planet-image-container-bottom">
+              <img
+                src={img.img_url}
+                className={className}
+                alt={img.name}
+              />
+            </div>
+          </li>
+        </h1>
+      );
+    })}
+  </ul>
+</section>
 
     </div>
     </>

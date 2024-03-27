@@ -18,9 +18,13 @@ const Home = () => {
   return (
     <>
 
-<ul className="solar-system-planets">
+    <div className="home-container">
+
+    <h1 className="welcome-text">Welcome to the Home page</h1>
+
+<ul className="home-img-container-main">
   {imageList.map((img) => {
-    if (img.name === 'moon1') {
+    if (img.name === 'solarSystem18') {
       return (
         <li key={img.id}>
           <img src={img.img_url} alt={img.name} className="home-background-img" />
@@ -32,7 +36,7 @@ const Home = () => {
 </ul>
 
 
-      <h1 className="welcome-text">Welcome to the Home page</h1>
+      <div className="intro-text-container">
       <p className="intro-text">
         Welcome to our celestial haven, where the wonders of the cosmos await
         your exploration! Dive into the depths of space with our comprehensive
@@ -52,6 +56,8 @@ const Home = () => {
         relax, and let your imagination soar as we embark on an unforgettable
         cosmic odyssey together. Welcome to the wonders of space!
       </p>
+      </div>
+      </div>
     </>
   );
 };
