@@ -68,11 +68,18 @@ export default function Planets() {
         </section>
 
         <section>
-          <h3 className="sub-heading">Info on individual planets:</h3>
+          <h3 className="sub-heading">Planets of our Solar System</h3>
+          <p className="planets-intro-text">
+            Our solar system is a vast and fascinating collection of celestial
+            bodies that orbit around a central star, the Sun. It consists of the
+            Sun, eight planets, their moons, dwarf planets, asteroids, comets,
+            and other small celestial objects. Below, you can explore the
+            planets in our solar system.
+          </p>
+
           <ul className="planet-list">
             {planetList.map((planet) => {
-
-let className = "planet-order-images-mid"; // Default className
+              let className = "planet-order-images-mid"; // Default className
               if (planet.name === "Mercury") {
                 className += " mercury-image-mid";
               } else if (planet.name === "Venus") {
@@ -93,7 +100,13 @@ let className = "planet-order-images-mid"; // Default className
                 className += " pluto-image-mid";
               }
 
-              if (planet.name !== "Sun" && planet.name !== "Pluto") {
+              if (
+                (planet.name !== "Sun" &&
+                  planet.name !== "Pluto" &&
+                  planet.name === "Mercury") ||
+                planet.name === "Jupiter" ||
+                planet.name === "Uranus"
+              ) {
                 return (
                   <h4 key={planet.name} className="planet-string">
                     <li>
@@ -101,21 +114,139 @@ let className = "planet-order-images-mid"; // Default className
                         <div className="planet-info-container">
                           <p className="planet-name">{planet.name}</p>
                           <p className="planet-type">
-                            {planet.name} is a {planet.planet_type} planet. It
-                            is {planet.distance_from_sun} million km from the
-                            Sun.
+                            {planet.name} is classified as a{" "}
+                            {planet.planet_type} celestial body, boasting an
+                            average temperature of {planet.average_temp}℉. It
+                            orbits the Sun at a distance of{" "}
+                            {planet.distance_from_sun} million kilometers and
+                            completes its orbit in {planet.orbital_period_years}{" "}
+                            Earth years. Notably, {planet.name} hosts{" "}
+                            {planet.number_of_moons} moons.
                           </p>
-                          <p className="number-of-moons">
-                            Number of Moons: {planet.number_of_moons}
-                          </p>
+                          <div className="planet-quick-facts">
+                            <p>Highest Recorded Temperature: {planet.highest_recorded_temp}℉</p>
+                            <p>Lowest Recorded Temperature: {planet.lowest_recorded_temp}℉</p>
+                          </div>
+                          
                         </div>
 
-                        <div className="article-image-container">
+                        <div className="planet-image-container">
                           <img
                             src={planet.img_url}
                             className={className}
                             alt={planet.name}
                           />
+                          <p>Click here to read more about {planet.name}</p>
+                        </div>
+                        
+                      </div>
+                    </li>
+                  </h4>
+                );
+              } else if (
+                planet.name !== "Sun" &&
+                planet.name !== "Pluto" &&
+                planet.name === "Earth"
+              ) {
+                return (
+                  <h4 key={planet.name} className="planet-string">
+                    <li>
+                      <div className="planet-main-container">
+                        <div className="planet-info-container">
+                          <p className="planet-name">{planet.name}</p>
+                          <p className="planet-type">
+                            {planet.name}, positioned {planet.distance_from_sun}{" "}
+                            million kilometers from the Sun, belongs to the
+                            category of {planet.planet_type} planets. Notably,
+                            Earth stands as the solitary planet in our Solar
+                            System known to harbor life. Earth's unique
+                            suitability for life arises from its optimal
+                            distance from the Sun, ensuring stable surface
+                            temperatures and the presence of liquid water—a
+                            fundamental requirement for life as we know it.
+                            Moreover, its temperate climate, protective
+                            atmosphere, geological dynamism, and magnetosphere,
+                            shielding it from harmful solar radiation,
+                            collectively contribute to its habitability. 
+                            In terms of orbital
+                            dynamics, {planet.name} completes an orbit around
+                            the Sun in approximately 365.25 days on average.
+                            However, to maintain synchronization with the
+                            astronomical year, leap years, occurring roughly
+                            every four years, include an additional day—February
+                            29th—in the calendar. {planet.name} has{" "}
+                            {planet.number_of_moons} moon, which illuminates the
+                            night sky with its radiant presence, casting a
+                            gentle glow upon the Earth's surface.
+                          </p>
+                          <div className="planet-quick-facts">
+                            <p>
+                           
+                              Highest Recorded Temperature:{" "}
+                              {planet.highest_recorded_temp}℉
+                            </p>
+                            <p>
+                   
+                              Lowest Recorded Temperature:{" "}
+                              {planet.lowest_recorded_temp}℉
+                            </p>
+                          </div>
+                          
+                        </div>
+
+                        <div className="planet-image-container">
+                          <img
+                            src={planet.img_url}
+                            className={className}
+                            alt={planet.name}
+                          />
+                          <p>Click here to read more about {planet.name}</p>
+                        </div>
+                      </div>
+                    </li>
+                  </h4>
+                );
+              } else if (
+                (planet.name !== "Sun" &&
+                  planet.name !== "Pluto" &&
+                  planet.name === "Venus") ||
+                planet.name === "Mars" ||
+                planet.name === "Saturn" ||
+                planet.name === "Neptune"
+              ) {
+                return (
+                  <h4 key={planet.name} className="planet-string">
+                    <li>
+                      <div className="planet-main-container">
+                        <div className="planet-image-container">
+                          <img
+                            src={planet.img_url}
+                            className={className}
+                            alt={planet.name}
+                          />
+                          <p>Click here to read more about {planet.name}</p>
+                        </div>
+
+                        <div className="planet-info-container">
+                          <p className="planet-name">{planet.name}</p>
+                          <p className="planet-type">
+                            {planet.name} is classified as a{" "}
+                            {planet.planet_type} celestial body, boasting an
+                            average temperature of {planet.average_temp}℉. It
+                            orbits the Sun at a distance of{" "}
+                            {planet.distance_from_sun} million kilometers and
+                            completes its orbit in {planet.orbital_period_years}{" "}
+                            Earth years. Notably, {planet.name} hosts{" "}
+                            {planet.number_of_moons} moons.
+                          </p>
+
+                          <div className="planet-quick-facts">
+                            <p>Highest Recorded Temperature: {planet.highest_recorded_temp}℉
+                            </p>
+                            <p>Lowest Recorded Temperature: {planet.lowest_recorded_temp}℉
+                            </p>
+                          </div>
+                          
                         </div>
                       </div>
                     </li>
@@ -128,41 +259,42 @@ let className = "planet-order-images-mid"; // Default className
 
         <section className="planet-img-bottom-section">
           <ul className="planet-image-list-bottom">
-            {planetList.map((img) => {
+            {planetList.map((planet) => {
               let className = "planet-order-images-bottom"; // Default className
-              if (img.name === "Mercury") {
+              if (planet.name === "Mercury") {
                 className += " mercury-image-bottom";
-              } else if (img.name === "Venus") {
+              } else if (planet.name === "Venus") {
                 className += " venus-image-bottom";
-              } else if (img.name === "Earth") {
+              } else if (planet.name === "Earth") {
                 className += " earth-image-bottom";
-              } else if (img.name === "Mars") {
+              } else if (planet.name === "Mars") {
                 className += " mars-image-bottom";
-              } else if (img.name === "Jupiter") {
+              } else if (planet.name === "Jupiter") {
                 className += " jupiter-image-bottom";
-              } else if (img.name === "Saturn") {
+              } else if (planet.name === "Saturn") {
                 className += " saturn-image-bottom";
-              } else if (img.name === "Uranus") {
+              } else if (planet.name === "Uranus") {
                 className += " uranus-image-bottom";
-              } else if (img.name === "Neptune") {
+              } else if (planet.name === "Neptune") {
                 className += " neptune-image-bottom";
-              } else if (img.name === "Sun") {
+              } else if (planet.name === "Sun") {
                 className += " sun-image-bottom";
-              } else if (img.name === "Pluto") {
+              } else if (planet.name === "Pluto") {
                 className += " pluto-image-bottom";
               }
 
               return (
-                <h5 key={img.name}>
+                <h5 key={planet.name}>
                   <li>
                     <div className="planet-image-container-bottom">
                       <img
-                        src={img.img_url}
+                        src={planet.img_url}
                         className={className}
-                        alt={img.name}
+                        alt={planet.name}
                       />
                     </div>
                   </li>
+
                 </h5>
               );
             })}
@@ -173,16 +305,4 @@ let className = "planet-order-images-mid"; // Default className
   );
 }
 
-/*
 
-Mercury: Diameter of about 4,880 kilometers (3,032 miles).
-Venus: Diameter of about 12,104 kilometers (7,521 miles).
-Earth: Diameter of about 12,742 kilometers (7,918 miles).
-Mars: Diameter of about 6,779 kilometers (4,212 miles).
-Jupiter: Diameter of about 139,820 kilometers (86,881 miles).
-Saturn: Diameter of about 116,460 kilometers (72,366 miles).
-Uranus: Diameter of about 50,724 kilometers (31,518 miles).
-Neptune: Diameter of about 49,244 kilometers (30,598 miles).
-These sizes are approximate and can vary slightly depending on how they are measured and defined.
-
-*/
