@@ -55,6 +55,14 @@ return (
         })}
       </ul>
     </section>
+
+    <div className="all-article-bottom-links">
+      <Link to="/" className="articles-back-home">
+            Home
+          </Link> 
+          </div>
+
+
   </div>
      
   </>
