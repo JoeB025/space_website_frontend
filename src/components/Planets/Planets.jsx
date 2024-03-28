@@ -51,15 +51,12 @@ export default function Planets() {
                 return (
                   <h2 key={img.name}>
                     <li>
-                      
                       <div className="planet-image-container-top">
-                        {/* <Link to={`/planets/${img.planets_id}`}> */}
                         <img
                           src={img.img_url}
                           className={className}
                           alt={img.name}
                         />
-                        {/* </Link> */}
                       </div>
                     </li>
                   </h2>
@@ -126,10 +123,15 @@ export default function Planets() {
                             {planet.number_of_moons} moons.
                           </p>
                           <div className="planet-quick-facts">
-                            <p>Highest Recorded Temperature: {planet.highest_recorded_temp}℉</p>
-                            <p>Lowest Recorded Temperature: {planet.lowest_recorded_temp}℉</p>
+                            <p>
+                              Highest Recorded Temperature:{" "}
+                              {planet.highest_recorded_temp}℉
+                            </p>
+                            <p>
+                              Lowest Recorded Temperature:{" "}
+                              {planet.lowest_recorded_temp}℉
+                            </p>
                           </div>
-                          
                         </div>
 
                         <div className="planet-image-container">
@@ -139,16 +141,16 @@ export default function Planets() {
                             alt={planet.name}
                           />
 
-<Link to={`/planets/${planet.planets_id}`} className="link-to-single-page">
-                            <p>&#9758; Click here to learn more about {planet.name} &#9756; 
+                          <Link
+                            to={`/planets/${planet.planets_id}`}
+                            className="link-to-single-page"
+                          >
+                            <p>
+                              &#9758; Click here to learn more about{" "}
+                              {planet.name} &#9756;
                             </p>
                           </Link>
-                 
-                        
-                        
-                        
-                          </div>
-                        
+                        </div>
                       </div>
                     </li>
                   </h4>
@@ -177,31 +179,27 @@ export default function Planets() {
                             Moreover, its temperate climate, protective
                             atmosphere, geological dynamism, and magnetosphere,
                             shielding it from harmful solar radiation,
-                            collectively contribute to its habitability. 
-                            In terms of orbital
-                            dynamics, {planet.name} completes an orbit around
-                            the Sun in approximately 365.25 days on average.
-                            However, to maintain synchronization with the
-                            astronomical year, leap years, occurring roughly
-                            every four years, include an additional day—February
-                            29th—in the calendar. {planet.name} has{" "}
+                            collectively contribute to its habitability. In
+                            terms of orbital dynamics, {planet.name} completes
+                            an orbit around the Sun in approximately 365.25 days
+                            on average. However, to maintain synchronization
+                            with the astronomical year, leap years, occurring
+                            roughly every four years, include an additional
+                            day—February 29th—in the calendar. {planet.name} has{" "}
                             {planet.number_of_moons} moon, which illuminates the
                             night sky with its radiant presence, casting a
                             gentle glow upon the Earth's surface.
                           </p>
                           <div className="planet-quick-facts">
                             <p>
-                           
                               Highest Recorded Temperature:{" "}
                               {planet.highest_recorded_temp}℉
                             </p>
                             <p>
-                   
                               Lowest Recorded Temperature:{" "}
                               {planet.lowest_recorded_temp}℉
                             </p>
                           </div>
-                          
                         </div>
 
                         <div className="planet-image-container">
@@ -210,8 +208,13 @@ export default function Planets() {
                             className={className}
                             alt={planet.name}
                           />
-                           <Link to={`/planets/${planet.planets_id}`} className="link-to-single-page">
-                            <p>&#9758; Click here to learn more about {planet.name} &#9756; 
+                          <Link
+                            to={`/planets/${planet.planets_id}`}
+                            className="link-to-single-page"
+                          >
+                            <p>
+                              &#9758; Click here to learn more about{" "}
+                              {planet.name} &#9756;
                             </p>
                           </Link>
                         </div>
@@ -237,8 +240,13 @@ export default function Planets() {
                             className={className}
                             alt={planet.name}
                           />
-                           <Link to={`/planets/${planet.planets_id}`} className="link-to-single-page">
-                            <p>&#9758; Click here to learn more about {planet.name} &#9756; 
+                          <Link
+                            to={`/planets/${planet.planets_id}`}
+                            className="link-to-single-page"
+                          >
+                            <p>
+                              &#9758; Click here to learn more about{" "}
+                              {planet.name} &#9756;
                             </p>
                           </Link>
                         </div>
@@ -257,12 +265,15 @@ export default function Planets() {
                           </p>
 
                           <div className="planet-quick-facts">
-                            <p>Highest Recorded Temperature: {planet.highest_recorded_temp}℉
+                            <p>
+                              Highest Recorded Temperature:{" "}
+                              {planet.highest_recorded_temp}℉
                             </p>
-                            <p>Lowest Recorded Temperature: {planet.lowest_recorded_temp}℉
+                            <p>
+                              Lowest Recorded Temperature:{" "}
+                              {planet.lowest_recorded_temp}℉
                             </p>
                           </div>
-                          
                         </div>
                       </div>
                     </li>
@@ -310,7 +321,6 @@ export default function Planets() {
                       />
                     </div>
                   </li>
-
                 </h5>
               );
             })}
@@ -318,14 +328,11 @@ export default function Planets() {
         </section>
 
         <div className="all-planet-bottom-links">
-      <Link to="/" className="all-planets-back-home">
+          <Link to="/" className="all-planets-back-home">
             Home
-          </Link> 
-          </div>
-
+          </Link>
+        </div>
       </div>
     </>
   );
 }
-
-

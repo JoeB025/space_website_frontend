@@ -4,6 +4,10 @@
   list-style: none;
 }
 
+.user-page-title {
+  text-align: center;
+}
+
 
 .user-container {
   border: solid green 2px;
