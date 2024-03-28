@@ -77,7 +77,8 @@
   min-width: 80px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  margin-top: 520px;
+  margin-top: 600px;
+  margin-left: 20px;
 }
 
 .dropdown-content a {

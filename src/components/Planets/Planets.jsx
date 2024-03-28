@@ -135,8 +135,16 @@ export default function Planets() {
                             className={className}
                             alt={planet.name}
                           />
-                          <p>Click here to read more about {planet.name}</p>
-                        </div>
+
+                          <Link to={`/planets/${planet.planets_id}`}>
+                            <p className="planet-link">&#9758; Click here to learn more about {planet.name} &#9756; 
+                            </p>
+                          </Link>
+                 
+                        
+                        
+                        
+                          </div>
                         
                       </div>
                     </li>
@@ -199,7 +207,10 @@ export default function Planets() {
                             className={className}
                             alt={planet.name}
                           />
-                          <p>Click here to read more about {planet.name}</p>
+                           <Link to={`/planets/${planet.planets_id}`}>
+                            <p className="planet-link">&#9758; Click here to learn more about {planet.name} &#9756; 
+                            </p>
+                          </Link>
                         </div>
                       </div>
                     </li>
@@ -223,7 +234,10 @@ export default function Planets() {
                             className={className}
                             alt={planet.name}
                           />
-                          <p>Click here to read more about {planet.name}</p>
+                           <Link to={`/planets/${planet.planets_id}`}>
+                            <p className="planet-link">&#9758; Click here to learn more about {planet.name} &#9756; 
+                            </p>
+                          </Link>
                         </div>
 
                         <div className="planet-info-container">
@@ -299,6 +313,13 @@ export default function Planets() {
             })}
           </ul>
         </section>
+
+        <div className="all-planet-bottom-links">
+      <Link to="/" className="all-planets-back-home">
+            Home
+          </Link> 
+          </div>
+
       </div>
     </>
   );
