@@ -51,12 +51,15 @@ export default function Planets() {
                 return (
                   <h2 key={img.name}>
                     <li>
+                      
                       <div className="planet-image-container-top">
+                        {/* <Link to={`/planets/${img.planets_id}`}> */}
                         <img
                           src={img.img_url}
                           className={className}
                           alt={img.name}
                         />
+                        {/* </Link> */}
                       </div>
                     </li>
                   </h2>
@@ -136,8 +139,8 @@ export default function Planets() {
                             alt={planet.name}
                           />
 
-                          <Link to={`/planets/${planet.planets_id}`}>
-                            <p className="planet-link">&#9758; Click here to learn more about {planet.name} &#9756; 
+<Link to={`/planets/${planet.planets_id}`} className="link-to-single-page">
+                            <p>&#9758; Click here to learn more about {planet.name} &#9756; 
                             </p>
                           </Link>
                  
@@ -207,8 +210,8 @@ export default function Planets() {
                             className={className}
                             alt={planet.name}
                           />
-                           <Link to={`/planets/${planet.planets_id}`}>
-                            <p className="planet-link">&#9758; Click here to learn more about {planet.name} &#9756; 
+                           <Link to={`/planets/${planet.planets_id}`} className="link-to-single-page">
+                            <p>&#9758; Click here to learn more about {planet.name} &#9756; 
                             </p>
                           </Link>
                         </div>
@@ -234,8 +237,8 @@ export default function Planets() {
                             className={className}
                             alt={planet.name}
                           />
-                           <Link to={`/planets/${planet.planets_id}`}>
-                            <p className="planet-link">&#9758; Click here to learn more about {planet.name} &#9756; 
+                           <Link to={`/planets/${planet.planets_id}`} className="link-to-single-page">
+                            <p>&#9758; Click here to learn more about {planet.name} &#9756; 
                             </p>
                           </Link>
                         </div>
