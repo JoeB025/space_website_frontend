@@ -1,0 +1,16 @@
+.moon-page-container {
+  background-color: rgba(198, 198, 198, 0.861);
+  padding-bottom: 10px;
+}
+
+
+.moon-page-title {
+  color: red;
+  text-align: center;
+}
+
+
+.moon-page-list {
+  list-style: none;
+  color: rgb(255, 140, 0);
+}

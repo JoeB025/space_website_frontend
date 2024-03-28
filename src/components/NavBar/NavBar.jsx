@@ -21,6 +21,10 @@ const NavBar = () => {
             Users
           </Link>
 
+          <Link to='moons' className="articles-link">
+            Moons
+          </Link>
+
           <div className="dropdown">
             <button className="dropdown-button">
               <i>Planets</i>

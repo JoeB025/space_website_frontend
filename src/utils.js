@@ -28,8 +28,8 @@ export function getUsers() {
   return spaceWebsiteApi.get("/api/users"); 
 } 
 
-export function getArticleComments(article_id) {
-  return spaceWebsiteApi.get(`/api/articles/${article_id}/comments`);
+export function getMoons() {
+  return spaceWebsiteApi.get("/api/moons");
 }
 
 

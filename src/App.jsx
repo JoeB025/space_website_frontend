@@ -8,7 +8,7 @@ import Planets from "./components/Planets/Planets";
 import ArticlesById from "./components/Articles/IndividualArticles/ArticlesById";
 import PlanetsById from "./components/Planets/IndividualPlanets/PlanetsById";
 import Users from "./components/Users/Users";
-
+import Moons from "./components/Moons/Moons"
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
         <Route path="/articles/:article_id" element={<ArticlesById />} />
         <Route path="/planets/:planets_id" element={<PlanetsById />} />
         <Route path="/users" element={<Users />} />
+        <Route path="/moons" element={<Moons />} />
       </Routes>
     </>
   );
