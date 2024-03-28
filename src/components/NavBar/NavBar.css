@@ -17,21 +17,33 @@
 }
 
 .home-link {
-  color: green;
+  color: rgb(255, 140, 0);
   font-size: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .articles-link {
-  color: white;
+  color: rgb(255, 140, 0);
   font-size: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+}
+
+.articles-link:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 
@@ -46,12 +58,16 @@
 .dropdown-button {
   border: none;
   outline: none;
-  color: white;
+  color: rgb(255, 140, 0);
   font-size: 1.75vw;
   background-color: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.dropdown-button:hover {
+  color: white;
 }
 
 .dropdown-content {

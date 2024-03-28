@@ -16,6 +16,10 @@ export function getPlanets() {
   return spaceWebsiteApi.get("/api/planets");
 }
 
+export function getPlanetsById(planets_id) {
+  return spaceWebsiteApi.get(`/api/planets/${planets_id}`);
+}
+
 export function getImages() {
   return spaceWebsiteApi.get("/api/images");
 }

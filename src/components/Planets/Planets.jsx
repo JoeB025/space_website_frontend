@@ -10,7 +10,6 @@ export default function Planets() {
   useEffect(() => {
     getPlanets().then((response) => {
       setPlanetList(response.data.planet);
-      console.log(response.data.planet[0].name);
     });
   }, []);
 
