@@ -16,6 +16,11 @@ const NavBar = () => {
             Articles
           </Link>
 
+
+          <Link to='users' className="articles-link">
+            Users
+          </Link>
+
           <div className="dropdown">
             <button className="dropdown-button">
               <i>Planets</i>

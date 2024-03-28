@@ -1,0 +1,18 @@
+.users-page-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  list-style: none;
+}
+
+
+.user-container {
+  border: solid green 2px;
+  width: 90%;
+  height: 200px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.user-img {
+  width: 20%;
+}

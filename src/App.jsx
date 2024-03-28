@@ -7,6 +7,8 @@ import Articles from "./components/Articles/Articles";
 import Planets from "./components/Planets/Planets";
 import ArticlesById from "./components/Articles/IndividualArticles/ArticlesById";
 import PlanetsById from "./components/Planets/IndividualPlanets/PlanetsById";
+import Users from "./components/Users/Users";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/planets" element={<Planets />} />
         <Route path="/articles/:article_id" element={<ArticlesById />} />
         <Route path="/planets/:planets_id" element={<PlanetsById />} />
+        <Route path="/users" element={<Users />} />
       </Routes>
     </>
   );
