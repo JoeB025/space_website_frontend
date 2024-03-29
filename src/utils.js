@@ -32,4 +32,16 @@ export function getMoons() {
   return spaceWebsiteApi.get("/api/moons");
 }
 
+export function getBlackHoles() {
+  return spaceWebsiteApi.get("/api/black_holes");
+}
+
+export function getAstronomyData() {
+  return spaceWebsiteApi.get("/api/astronomy_info");
+}
+
+// export function getGalaxies() {
+//   return spaceWebsiteApi.get("/api/galaxies")
+// }
+
 

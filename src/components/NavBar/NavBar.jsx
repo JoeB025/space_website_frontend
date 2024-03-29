@@ -25,6 +25,20 @@ const NavBar = () => {
             Moons
           </Link>
 
+          <Link to='black_holes' className="articles-link">
+            Black Holes
+          </Link>
+
+          <Link to='astronomy_info' className="articles-link">
+            Astronomy
+          </Link>
+
+          {/* <Link to='galaxies' className="articles-link">
+            Galaxies
+          </Link> */}
+
+          
+
           <div className="dropdown">
             <button className="dropdown-button">
               <i>Planets</i>
