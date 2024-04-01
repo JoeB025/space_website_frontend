@@ -40,8 +40,16 @@ export function getAstronomyData() {
   return spaceWebsiteApi.get("/api/astronomy_info");
 }
 
-// export function getGalaxies() {
-//   return spaceWebsiteApi.get("/api/galaxies")
-// }
+export function getGalaxies() {
+  return spaceWebsiteApi.get("/api/galaxies")
+}
+
+export function getStars() {
+  return spaceWebsiteApi.get("/api/stars")
+}
+
+export function getTopics() {
+  return spaceWebsiteApi.get("/api/topics")
+}
 
 

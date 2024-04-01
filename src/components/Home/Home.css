@@ -2,10 +2,19 @@
   background-color: rgba(0, 0, 0, 0.91);
 }
 
+.welcome-text-title {
+  color: rgba(255, 255, 255, 0.709);
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Moondog Fifteen';
+  padding-top: 20px;
+}
+
 .welcome-text {
   color: rgba(255, 255, 255, 0.709);
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
+  font-family: 'Moondog Fifteen';
 }
 
 .home-img-container-main {
@@ -16,11 +25,9 @@
   list-style: none;
 }
 
-.solar-system-planets {
-  list-style: none;
-  width: 50%;
+.home-background-img {
+  width: 100%;
 }
-
 
 .intro-text {
   color: white;
@@ -30,4 +37,5 @@
   padding-right: 15%;
   font-size: 20px;
   padding-bottom: 5%;
+  font-family: 'Moondog Fifteen';
 }

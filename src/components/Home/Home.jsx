@@ -20,7 +20,8 @@ const Home = () => {
 
     <div className="home-container">
 
-    <h1 className="welcome-text">Welcome to the Home page</h1>
+    <h1 className="welcome-text-title">Galactic Gateway</h1>
+    <p className="welcome-text">Explore the Worlds of Planets, Stars, Galaxies, and Moons</p>
 
 <ul className="home-img-container-main">
   {imageList.map((img) => {

@@ -16,6 +16,10 @@ const NavBar = () => {
             Articles
           </Link>
 
+          <Link to='topics' className="articles-link">
+            Topics
+          </Link>
+
 
           <Link to='users' className="articles-link">
             Users
@@ -33,9 +37,13 @@ const NavBar = () => {
             Astronomy
           </Link>
 
-          {/* <Link to='galaxies' className="articles-link">
+          <Link to='galaxies' className="articles-link">
             Galaxies
-          </Link> */}
+          </Link>
+
+          <Link to='stars' className="articles-link">
+            Stars
+          </Link>
 
           
 

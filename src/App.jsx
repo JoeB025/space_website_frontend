@@ -11,7 +11,9 @@ import Users from "./components/Users/Users";
 import Moons from "./components/Moons/Moons"
 import BlackHoles from "./components/BlackHoles/BlackHoles";
 import AstronomyData from "./components/Astronomy/AstronomyData"
-// import GalaxyData from "./components/Galaxies/GalaxyData";
+import GalaxyData from "./components/Galaxies/Galaxies";
+import StarData from "./components/Stars/Stars";
+import TopicsData from "./components/Topics/Topics";
 
 function App() {
   return (
@@ -29,7 +31,9 @@ function App() {
         <Route path="/moons" element={<Moons />} />
         <Route path="/black_holes" element={<BlackHoles />} />
         <Route path="/astronomy_info" element={<AstronomyData />} />
-        {/* <Route path="/galaxies" element={<GalaxyData />} /> */}
+        <Route path="/galaxies" element={<GalaxyData />} />
+        <Route path="/stars" element={<StarData />} />
+        <Route path='topics' element={<TopicsData />} />
       </Routes>
     </>
   );
