@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Planets() {
   const [planetList, setPlanetList] = useState([]);
-  const [imageList, setImageList] = useState([]);
+
 
   useEffect(() => {
     getPlanets().then((response) => {
@@ -13,11 +13,6 @@ export default function Planets() {
     });
   }, []);
 
-  useEffect(() => {
-    getImages().then((response) => {
-      setImageList(response.data.image);
-    });
-  }, []);
 
   return (
     <>
@@ -146,8 +141,8 @@ export default function Planets() {
                             className="link-to-single-page"
                           >
                             <p>
-                              &#9758; Click here to learn more about{" "}
-                              {planet.name} &#9756;
+                            🚀 Click here to travel to{" "}
+                              {planet.name} 🛸
                             </p>
                           </Link>
                         </div>
@@ -212,9 +207,9 @@ export default function Planets() {
                             to={`/planets/${planet.planets_id}`}
                             className="link-to-single-page"
                           >
-                            <p>
-                              &#9758; Click here to learn more about{" "}
-                              {planet.name} &#9756;
+                           <p>
+                            🚀 Click here to travel to{" "}
+                              {planet.name} 🛸
                             </p>
                           </Link>
                         </div>
@@ -244,9 +239,9 @@ export default function Planets() {
                             to={`/planets/${planet.planets_id}`}
                             className="link-to-single-page"
                           >
-                            <p>
-                              &#9758; Click here to learn more about{" "}
-                              {planet.name} &#9756;
+                             <p>
+                            🚀 Click here to travel to{" "}
+                              {planet.name} 🛸
                             </p>
                           </Link>
                         </div>

@@ -243,7 +243,7 @@ export default function Moons() {
               </ul>
 
               <p className="other-moons-title">
-                Other notable moons Orbiting Jupiter
+                Other notable moons orbiting Jupiter
               </p>
               <ul className="moon-list-container2">
                 {moonList.map((moon) => {
@@ -344,7 +344,7 @@ export default function Moons() {
               </ul>
 
               <p className="other-moons-title">
-                Other notable moons Orbiting Saturn
+                Other notable moons orbiting Saturn
               </p>
               <ul className="moon-list-container2">
                 {moonList.map((moon) => {
@@ -433,7 +433,7 @@ export default function Moons() {
               </ul>
 
               <p className="other-moons-title">
-                Other notable moons Orbiting Uranus
+                Other notable moons orbiting Uranus
               </p>
               <ul className="moon-list-container2">
                 {moonList.map((moon) => {
@@ -551,7 +551,7 @@ export default function Moons() {
               </ul>
 
               <p className="other-moons-title">
-                Other notable moons Orbiting Neptune
+                Other notable moons orbiting Neptune
               </p>
               <ul className="moon-list-container2">
                 {moonList.map((moon) => {

@@ -2,6 +2,7 @@
   background-color: black;
 }
 
+
 .planet-page-title {
   text-align: center;
   font-size: 40px;
@@ -183,16 +184,19 @@
 
 .mars-image-mid {
   width: 50%;
+  border-radius: 200px;
   animation: rotation 30s infinite linear
 }
 
 .jupiter-image-mid {
   width: 50%;
+  border-radius: 200px;
   animation: rotation 30s infinite linear
 }
 
 .saturn-image-mid {
   width: 50%;
+  border-radius: 200px;
   animation: rotation 30s infinite linear
 }
 
@@ -203,6 +207,7 @@
 
 .neptune-image-mid {
   width: 60%;
+  border-radius: 200px;
   animation: rotation 30s infinite linear
 }
 
@@ -221,6 +226,7 @@
   color: rgb(255, 140, 0);
   font-size: 30px;
   text-decoration: none;
+  margin-top: 40px;
 }
 
 .link-to-single-page:hover {
