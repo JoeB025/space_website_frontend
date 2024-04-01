@@ -58,6 +58,7 @@ const Home = () => {
         cosmic odyssey together. Welcome to the wonders of space!
       </p>
       </div>
+      <p className="portfolio-link">Link to portfolio page</p>
       </div>
     </>
   );

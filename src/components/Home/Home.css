@@ -39,3 +39,13 @@
   padding-bottom: 5%;
   font-family: 'Moondog Fifteen';
 }
+
+.portfolio-link {
+  text-align: center;
+  padding-bottom: 3%;
+  font-size: 30px;
+}
+
+.portfolio-link:hover {
+  color: gold;
+}
