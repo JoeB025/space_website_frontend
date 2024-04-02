@@ -1,0 +1,44 @@
+
+.art-dropdown, 
+.art-dropdown-button {
+  border: none;
+  outline: none;
+  color: grey;
+  font-size: 20px;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.art-dropdown-button:hover {
+  color: blue;
+}
+
+.art-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #9c1111;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 100px;
+}
+
+.art-dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.art-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.art-dropdown:hover .art-dropdown-content {
+  display: block;
+}

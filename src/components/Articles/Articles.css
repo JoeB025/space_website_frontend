@@ -1,66 +1,93 @@
 .container {
-  border: 10px green ridge;;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .article-page-title {
-  text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   color: black;
   font-weight: bold;
+  margin-left: 8%;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.article-content-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 .article-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-left: 20px;
   padding-right: 20px;
-  color: rgb(194, 0, 0);
+  color: black;
   list-style: none; 
-  border: 5px, solid, red;
 }
 
 .article-container {
-  border: ridge rgb(49, 49, 49) 10px;
   font-size: 18px;
   text-align: center;
+  width: 300px;
 }
 
 .main-container {
   text-align: center;
-  font-size: 10px;
+  font-size: 15px;
+}
+
+.article-image-container:hover {
+  transform: scale(1.05);
 }
 
 .article-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: transform 0.3s ease-in-out
 }
 
 .article-image {
-  height: 50%;
-  width: 50%;
-  border-radius: 12px;
+  width: 280px;
+  height: 180px;
+  border-radius: 15px;
+  padding: 10px;
 }
 
-
-
-
-.all-article-bottom-links {
-  width: 100%; 
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.articles-back-home {
-  font-family: 'Knockout Punch';
-  font-size: 30px;
-  color: rgba(189, 0, 170, 0.912);
-  width: 100%;
+.article-title {
+  font-family: 'moondog fifteen';
+  font-size: 20px;
+  height: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: black;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.articles-back-home:hover {
-  color: rgb(0, 46, 132);
+.article-title:hover {
+  text-decoration: underline dotted;  
 }
+
+.topic-author-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.author-container:hover,
+.topic-container:hover {
+  color: grey;
+}
+
+.article-author-name:hover,
+.article-topic-name:hover {
+  text-decoration: underline dotted;
+}
+
+
+
+
+
