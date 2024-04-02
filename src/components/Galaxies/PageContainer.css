@@ -1,0 +1,14 @@
+.galaxies-data-container {
+  list-style: none;
+  background-color: black;
+  color: grey;
+  font-family: 'moondog fifteen';
+  text-align: justify;
+  padding-bottom: 3%;
+}
+
+.galaxies-header {
+  color: black;
+  margin-left: 8%;
+  margin-top: -50px;
+}
