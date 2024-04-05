@@ -41,10 +41,6 @@ const NavBar = () => {
             Galaxies
           </Link>
 
-          <Link to='topics' className="articles-link">
-            Topics
-          </Link>
-
           <Link to='black_holes' className="articles-link">
             Black Holes
           </Link>

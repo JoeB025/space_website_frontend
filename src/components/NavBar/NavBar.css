@@ -6,6 +6,8 @@
   justify-content: space-evenly;
   height: 50px;
   font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .nav-left {
@@ -35,7 +37,7 @@
 }
 
 .articles-link {
-  color: rgb(255, 140, 0);
+  color: grey;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,7 +61,7 @@
 .dropdown-button {
   border: none;
   outline: none;
-  color: rgb(255, 140, 0);
+  color: grey;
   font-size: 1.75vw;
   background-color: inherit;
   display: flex;
@@ -74,11 +76,11 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #9c1111;
+  background-color: grey;
   min-width: 80px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  margin-top: 600px;
+  margin-top: 520px;
   margin-left: 20px;
 }
 
