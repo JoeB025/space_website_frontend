@@ -6,13 +6,18 @@ import { useEffect, useState } from "react"
 const Home = () => {
 
   const [imageList, setImageList] = useState([])
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getImages().then((response) => {
       setImageList(response.data.image)
+      setLoading(false);
       console.log(response.data.image)
     });
   }, []);
+
+
+  if (loading) return <p className="loading-home-page">Home Page Loading...</p>;
 
 
   return (

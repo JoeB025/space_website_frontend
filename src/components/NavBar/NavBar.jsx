@@ -13,39 +13,8 @@ const NavBar = () => {
 
         <div className="nav-center">
           <Link to="articles" className="articles-link">
-            Articles
+            Articles 
           </Link>
-
-          <Link to='topics' className="articles-link">
-            Topics
-          </Link>
-
-
-          <Link to='users' className="articles-link">
-            Users
-          </Link>
-
-          <Link to='moons' className="articles-link">
-            Moons
-          </Link>
-
-          <Link to='black_holes' className="articles-link">
-            Black Holes
-          </Link>
-
-          <Link to='astronomy_info' className="articles-link">
-            Astronomy
-          </Link>
-
-          <Link to='galaxies' className="articles-link">
-            Galaxies
-          </Link>
-
-          <Link to='stars' className="articles-link">
-            Stars
-          </Link>
-
-          
 
           <div className="dropdown">
             <button className="dropdown-button">
@@ -63,11 +32,44 @@ const NavBar = () => {
               <Link to="/planets/9">Neptune</Link>
             </div>
           </div>
+
+          <Link to='moons' className="articles-link">
+            Moons
+          </Link>
+
+          <Link to='galaxies' className="articles-link">
+            Galaxies
+          </Link>
+
+          <Link to='topics' className="articles-link">
+            Topics
+          </Link>
+
+          <Link to='black_holes' className="articles-link">
+            Black Holes
+          </Link>
+
+          <Link to='astronomy_info' className="articles-link">
+            Astronomy
+          </Link>
+
+        
+
+          <Link to='stars' className="articles-link">
+            Stars
+          </Link>
+
+          
+
+          
         </div>
 
         <div className="nav-right">
-          <h3 className="sign-up-link">Sign-up</h3>
-          <h4 className="Log-in-link">Log-in</h4>
+        <Link to='users' className="articles-link">
+            Users
+          </Link>
+          <Link to='/' className="articles-link">Sign-up</Link>
+          <Link to='/' className="articles-link">Log-in</Link>
         </div>
       </nav>
     </>

@@ -65,13 +65,16 @@ export default function GalaxyData() {
               </li>
             );
           })}
-        </ul>
 
-        <div className="galaxies-bottom-links">
+
+           <div className="galaxies-bottom-links">
           <Link to="/" className="galaxies-back-home">
             Home
           </Link>
         </div>
+        </ul>
+
+       
       </div>
     </>
   );

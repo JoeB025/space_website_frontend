@@ -1,24 +1,27 @@
 .top-bar {
-  color: red;
-  background-color: black;
+  background-color: #333;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  font-size: 20px;
+  height: 50px;
+  font-size: 25px;
 }
 
 .nav-left {
   display: flex;
-  border: 2px solid red;
   justify-content: space-evenly;
-  width: 7%;
+  width: 5%;
   color: blue;
 }
 
+.nav-left:hover {
+  background-color: #04AA6D;
+}
+
 .home-link {
-  color: rgb(255, 140, 0);
-  font-size: 30px;
+  color: rgba(188, 188, 188, 0.726);
+  /* font-size: 25px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +36,6 @@
 
 .articles-link {
   color: rgb(255, 140, 0);
-  font-size: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,9 +51,8 @@
 
 .nav-center {
   display: flex;
-  border: 2px solid red;
   justify-content: space-evenly;
-  width: 80%;
+  width: 75%;
 }
 
 .dropdown, 
@@ -105,7 +106,6 @@
 
 .nav-right {
   display: flex;
-  border: 2px solid red;
   justify-content: space-evenly;
-  width: 13%;
+  width: 20%;
 }
