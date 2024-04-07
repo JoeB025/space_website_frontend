@@ -7,13 +7,17 @@ import { Link } from "react-router-dom";
 export default function PlanetsById() {
   const { planets_id } = useParams();
   const [planetsById, setPlanetsById] = useState({});
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getPlanetsById(planets_id).then((response) => {
       setPlanetsById(response.data.planet);
+      setLoading(false);
       console.log(response.data.planet);
     });
   }, [planets_id]);
+
+  if (loading) return <p className="loading-home-page">Loading {planetsById.name}...</p>;
 
   return (
     <>

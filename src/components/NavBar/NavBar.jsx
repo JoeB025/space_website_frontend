@@ -43,6 +43,10 @@ const NavBar = () => {
             Galaxies
           </Link>
 
+          <Link to="stars" className="articles-link">
+            Stars
+          </Link>
+
           <Link to="black_holes" className="articles-link">
             Black Holes
           </Link>
@@ -51,9 +55,7 @@ const NavBar = () => {
           Celestial Entities
           </Link>
 
-          <Link to="stars" className="articles-link">
-            Stars
-          </Link>
+     
         </div>
 
         <div className="nav-right">

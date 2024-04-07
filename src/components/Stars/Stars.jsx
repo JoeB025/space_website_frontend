@@ -8,12 +8,16 @@ import "./Links.css";
 
 export default function StarData() {
   const [starsList, setStarsList] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getStars().then((response) => {
       setStarsList(response.data.stars);
+      setLoading(false);
     });
   }, []);
+
+  if (loading) return <p className="loading-home-page">Loading...</p>;
 
   return (
     <>
@@ -174,26 +178,38 @@ export default function StarData() {
                 );
               } else {
                 return (
-                  <li key={star.name}>
+                  <li key={star.name} className="star-ordered-list">
                     <div className="star-data-container">
-                      <p className="star-name">{star.name}</p>
-                      <p>Type: {star.type}</p>
-                      <p>Luminosity: {star.luminosity}</p>
-                      <p>Age: {star.age}</p>
-                      <p>Radius: {star.radius}</p>
-                      <p>Size compared to our Sun: {star.size_comparison}</p>
-                      <p>Temperature: {star.temperature}</p>
-                      <p>Description: {star.description}</p>
-                      <p>Mass: {star.mass}</p>
-
-                      <div className="star-img-container">
-                        <img
-                          src={star.img_url}
-                          className="star-image"
-                          alt={star.topic}
-                        />
+                      <div className="star-left-container">
+                        <div className="star-name-container">
+                          <p className="star-name">{star.name}</p>
+                        </div>
+                        <div className="star-img-container">
+                          <img
+                            src={star.img_url}
+                            className="star-image"
+                            alt={star.topic}
+                          />
+                        </div>
                       </div>
-                    </div>
+
+<div className="star-right-container">
+<div className="star-left-section">
+                      <p className="star-facts">Type: {star.type}</p>
+                      <p className="star-facts">Age: {star.age}</p>
+                      <p className="star-facts">Size compared to our Sun: {star.size_comparison}</p>
+                      <p className="star-facts">Temperature: {star.temperature}</p>
+                      </div>
+
+                  <div className="star-right-section">
+                      <p className="star-facts">Luminosity: {star.luminosity}</p>
+                      <p className="star-facts">Radius: {star.radius}</p>
+                      <p className="star-facts">Mass: {star.mass}</p>
+                      </div>
+                      </div>
+                    </div><div className="star-description-container">
+                      <p>{star.name} is {star.description.slice(0, 1).toLowerCase()}{star.description.slice(1)}</p>
+                     </div>
                   </li>
                 );
               }

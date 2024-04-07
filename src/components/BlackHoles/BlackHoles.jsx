@@ -6,13 +6,17 @@ import "./Links.css";
 
 export default function BlackHoles() {
   const [blackHolesList, setBlackHolesList] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getBlackHoles().then((response) => {
       setBlackHolesList(response.data.blackHoles);
+      setLoading(false);
       console.log(response.data.blackHoles);
     });
   }, []);
+
+  if (loading) return <p className="loading-home-page">Loading...</p>;
 
   return (
     <>

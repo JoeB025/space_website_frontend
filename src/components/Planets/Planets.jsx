@@ -5,12 +5,16 @@ import { Link } from "react-router-dom";
 
 export default function Planets() {
   const [planetList, setPlanetList] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getPlanets().then((response) => {
       setPlanetList(response.data.planet);
+      setLoading(false)
     });
   }, []);
+
+  if (loading) return <p className="loading-home-page">Loading...</p>;
 
   return (
     <>

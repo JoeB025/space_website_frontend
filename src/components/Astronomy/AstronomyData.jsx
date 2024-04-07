@@ -6,15 +6,17 @@ import "./Links.css"
 
 export default function AstronomyData() {
   const [astronomyList, setAstronomyList] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     getAstronomyData().then((response) => {
       setAstronomyList(response.data.astronomy)
+      setLoading(false)
       console.log(response.data.astronomy)
     })
   }, [])
 
-
+  if (loading) return <p className="loading-home-page">Loading...</p>;
 
 return (
   <>

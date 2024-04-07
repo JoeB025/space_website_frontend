@@ -8,10 +8,12 @@ import { Link } from "react-router-dom";
 export default function Moons() {
   const [moonList, setMoonList] = useState([]);
   const [imageList, setImageList] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getMoons().then((response) => {
       setMoonList(response.data.moon);
+      setLoading(false);
       console.log(response.data.moon);
     });
   }, []);
@@ -21,6 +23,8 @@ export default function Moons() {
       setImageList(response.data.image);
     });
   }, []);
+
+  if (loading) return <p className="loading-home-page">Loading...</p>;
 
   return (
     <>

@@ -7,13 +7,17 @@ import { Link } from "react-router-dom";
 
 export default function GalaxyData() {
   const [galaxyList, setGalaxyList] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getGalaxies().then((response) => {
       setGalaxyList(response.data.galaxy);
+      setLoading(false)
       console.log(response.data);
     });
   }, []);
+
+  if (loading) return <p className="loading-home-page">Loading...</p>;
 
   return (
     <>
