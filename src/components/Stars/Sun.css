@@ -1,0 +1,67 @@
+.sun-container {
+  color: white;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.sun-main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sun-title-container {
+  font-size: 50px;
+  color: rgb(255, 238, 0);
+  transition: 2s;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+.sun-title-container:hover {
+  font-size: 70px;
+  color: orangered
+}
+
+.sun-facts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.sun-facts:hover {
+  color: rgb(216, 101, 0);
+}
+
+.sun-description-container {
+  font-size: 18px;
+  color: rgb(216, 101, 0);
+  padding-right: 5%;
+  text-align: justify;
+}
+
+.sun-bottom-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sun-description-container-p2 {
+  font-size: 18px;
+  color: rgb(216, 101, 0);
+  text-align: justify;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.sun-image {
+  width: 200px;
+}
+
+
+
+
+
+

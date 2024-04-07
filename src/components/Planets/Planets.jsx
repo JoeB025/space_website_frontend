@@ -6,13 +6,11 @@ import { Link } from "react-router-dom";
 export default function Planets() {
   const [planetList, setPlanetList] = useState([]);
 
-
   useEffect(() => {
     getPlanets().then((response) => {
       setPlanetList(response.data.planet);
     });
   }, []);
-
 
   return (
     <>
@@ -63,13 +61,18 @@ export default function Planets() {
 
         <section>
           <h3 className="sub-heading">Planets of our Solar System</h3>
-          <p className="planets-intro-text">
-            Our solar system is a vast and fascinating collection of celestial
-            bodies that orbit around a central star, the Sun. It consists of the
-            Sun, eight planets, their moons, dwarf planets, asteroids, comets,
-            and other small celestial objects. Below, you can explore the
-            planets in our solar system.
-          </p>
+          <div className="planets-intro-text-container">
+            <p className="planets-intro-text">
+              Our solar system is a vast and fascinating collection of celestial
+              bodies that orbit around a central star, the Sun. It consists of
+              the Sun, eight planets, their moons, dwarf planets, asteroids,
+              comets, and other small celestial objects. Below, you can explore
+              the planets in our solar system.
+            </p>
+            <p className="planets-intro-text">
+              Below, you can explore the planets in our solar system.
+            </p>
+          </div>
 
           <ul className="planet-list">
             {planetList.map((planet) => {
@@ -140,10 +143,7 @@ export default function Planets() {
                             to={`/planets/${planet.planets_id}`}
                             className="link-to-single-page"
                           >
-                            <p>
-                            🚀 Click here to travel to{" "}
-                              {planet.name} 🛸
-                            </p>
+                            <p>🚀 Click here to travel to {planet.name} 🛸</p>
                           </Link>
                         </div>
                       </div>
@@ -207,10 +207,7 @@ export default function Planets() {
                             to={`/planets/${planet.planets_id}`}
                             className="link-to-single-page"
                           >
-                           <p>
-                            🚀 Click here to travel to{" "}
-                              {planet.name} 🛸
-                            </p>
+                            <p>🚀 Click here to travel to {planet.name} 🛸</p>
                           </Link>
                         </div>
                       </div>
@@ -239,10 +236,7 @@ export default function Planets() {
                             to={`/planets/${planet.planets_id}`}
                             className="link-to-single-page"
                           >
-                             <p>
-                            🚀 Click here to travel to{" "}
-                              {planet.name} 🛸
-                            </p>
+                            <p>🚀 Click here to travel to {planet.name} 🛸</p>
                           </Link>
                         </div>
 

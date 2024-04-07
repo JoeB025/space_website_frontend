@@ -54,7 +54,7 @@ margin-right: 40px;
 }
 
 .bh-title:hover {
-  color: rgb(0, 110, 113);
+  color:rgb(50, 50, 50);
   text-decoration: dotted;
   font-size: 45px;
 }
@@ -88,7 +88,7 @@ margin-right: 40px;
 .bh-type-container:hover,
 .bh-distance-container:hover,
 .bh-mass-container:hover {
-  color: rgb(168, 0, 28);
+  color: rgb(255, 115, 0);
   font-size: 18.5px;
   transition: 1.2s;
 }

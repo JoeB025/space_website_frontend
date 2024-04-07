@@ -7,21 +7,5 @@
 
 
 
-.astronomy-bottom-links {
-  width: 100%; 
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 
-.astronomy-back-home {
-  font-family: 'Knockout Punch';
-  font-size: 30px;
-  color: rgba(189, 0, 170, 0.912);
-  width: 100%;
-  text-decoration: none;
-}
 
-.astronomy-back-home:hover {
-  color: rgb(0, 46, 132);
-}

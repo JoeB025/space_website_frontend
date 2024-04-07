@@ -20,7 +20,7 @@ const NavBar = () => {
 
           <div className="dropdown">
             <button className="dropdown-button">
-              <i>Planets</i>
+              <i>Planets &#x290B;</i>
             </button>
             <div className="dropdown-content">
               <Link to="planets">All Planets</Link>
@@ -48,7 +48,7 @@ const NavBar = () => {
           </Link>
 
           <Link to="astronomy_info" className="articles-link">
-            Astronomy
+          Celestial Entities
           </Link>
 
           <Link to="stars" className="articles-link">

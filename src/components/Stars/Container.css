@@ -1,0 +1,62 @@
+.star-page-container {
+  background-color: rgb(0, 0, 0);
+  padding-top: 40px;
+}
+
+.star-intro-heading-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.star-icon-container {
+  color: grey;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  transition: 2s;
+}
+
+.blue-star-icon:hover {
+  color: blue;
+}
+.white-star-icon:hover {
+  color: white;
+}
+.yellow-star-icon:hover {
+  color: yellow;
+}
+.orange-star-icon:hover {
+color: orangered;
+}
+.red-star-icon:hover{
+  color: red;
+}
+
+.stars-intro-heading {
+  font-family: 'Knockout Punch';
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+}
+
+.stars-intro-text {
+  font-family: 'moondog fifteen';
+  font-size: 20px;
+  color: grey;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify;
+  margin-bottom: 120px;
+}
+
+.stars-list-container {
+  list-style: none;
+  margin-right: 40px;
+}
+
+

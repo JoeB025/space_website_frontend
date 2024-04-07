@@ -1,18 +1,17 @@
 .container-planets {
   background-color: black;
   font-family: 'moondog fifteen';
-  margin-top: -27px;
+  margin-top: -40px;
 }
 
 
 .planet-page-title {
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
   color: grey;
-  padding-top: 20px;
   font-family: 'moondog fifteen';
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 /* planet image section top */
@@ -87,7 +86,7 @@
   text-align: center;
   padding-top: 20px;
   font-size: 30px;
-  color: rgb(255, 140, 0);
+  color: grey;
   text-decoration: underline;
 }
 
@@ -96,19 +95,23 @@
   text-decoration: underline;
 }
 
-.planets-intro-text {
-  text-align: justify;
-  font-size: 25px;
-  line-height: 30px;
-  color: rgb(255, 140, 0);
+.planets-intro-text-container {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding-left: 220px;
   padding-right: 220px;
-  padding-bottom: 200px;
-  border-bottom: solid 3px white;
+  padding-bottom: 80px;
+  border-bottom: solid 3px grey;
   margin-left: 40px;
   margin-right: 40px;
+  font-size: 25px;
+  line-height: 30px;
+  color: rgb(255, 140, 0);
 }
+
+.planets-intro-text {
+  text-align: center;
+}
+
 
 .planet-list {
   list-style: none;
@@ -124,7 +127,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-bottom: solid white 3px;
+  border-bottom: solid rgb(255, 140, 0) 3px;
   padding-top: 50px;
   padding-bottom: 100px;
 }
@@ -133,11 +136,11 @@
 .planet-name {
   font-size: 40px;
   margin-top: -50px;
-  color: rgb(255, 140, 0);
+  color: grey;
 }
 
 .planet-name:hover {
-  color: rgb(132, 0, 0);
+  color: rgb(34, 34, 34);
 }
 
 .planet-info-container {
@@ -326,7 +329,7 @@
 .all-planets-back-home {
   font-family: 'Knockout Punch';
   font-size: 30px;
-  color: rgba(189, 98, 0, 0.912);
+  color: grey;
   width: 100%;
   text-decoration: none;
 }
@@ -334,3 +337,5 @@
 .all-planets-back-home:hover {
   color: rgb(0, 46, 132);
 }
+
+
