@@ -17,7 +17,7 @@ export default function Planets() {
   return (
     <>
       <div className="container-planets">
-        <h1 className="planet-page-title">Welcome to the Planets Page!</h1>
+        <h1 className="planet-page-title">Galactic Getaway</h1>
         <section className="planet-img-top-section">
           <ul className="planet-image-list-top">
             {planetList.map((img) => {

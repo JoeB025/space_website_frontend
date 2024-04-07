@@ -4,7 +4,7 @@ const Header = () => {
 
   return (
     <>
-      <h1 className="title-header">Space</h1>
+      <h1 className="title-header">Galactic Gateway</h1>
     </>
   )
 }

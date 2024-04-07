@@ -1,5 +1,6 @@
 .single-planet-container {
   background-color: black;
+  margin-top: -80px;
 }
 
 
@@ -7,6 +8,7 @@
   color: rgb(143, 0, 0);
   font-size: 80px;
   text-align: center;
+  padding-top: 40px;
 }
 
 .individual-planet-description {

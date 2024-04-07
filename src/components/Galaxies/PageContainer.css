@@ -1,3 +1,10 @@
+.galaxy-page-container {
+  background-color: black;
+  padding-top: 20px;
+  font-family: 'moondog fifteen';
+}
+
+
 .galaxies-data-container {
   list-style: none;
   background-color: black;
@@ -10,5 +17,4 @@
 .galaxies-header {
   color: black;
   margin-left: 8%;
-  margin-top: -50px;
 }

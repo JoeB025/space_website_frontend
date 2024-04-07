@@ -1,9 +1,11 @@
 import "./NavBar.css";
+import "./DropDown.css";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <>
+    <div className="top-bar-container">
       <nav className="top-bar">
         <div className="nav-left">
           <Link to="/" className="home-link">
@@ -13,7 +15,7 @@ const NavBar = () => {
 
         <div className="nav-center">
           <Link to="articles" className="articles-link">
-            Articles 
+            Articles
           </Link>
 
           <div className="dropdown">
@@ -33,41 +35,40 @@ const NavBar = () => {
             </div>
           </div>
 
-          <Link to='moons' className="articles-link">
+          <Link to="moons" className="articles-link">
             Moons
           </Link>
 
-          <Link to='galaxies' className="articles-link">
+          <Link to="galaxies" className="articles-link">
             Galaxies
           </Link>
 
-          <Link to='black_holes' className="articles-link">
+          <Link to="black_holes" className="articles-link">
             Black Holes
           </Link>
 
-          <Link to='astronomy_info' className="articles-link">
+          <Link to="astronomy_info" className="articles-link">
             Astronomy
           </Link>
 
-        
-
-          <Link to='stars' className="articles-link">
+          <Link to="stars" className="articles-link">
             Stars
           </Link>
-
-          
-
-          
         </div>
 
         <div className="nav-right">
-        <Link to='users' className="articles-link">
+          <Link to="users" className="articles-link">
             Users
           </Link>
-          <Link to='/' className="articles-link">Sign-up</Link>
-          <Link to='/' className="articles-link">Log-in</Link>
+          <Link to="/" className="articles-link">
+            Sign-up
+          </Link>
+          <Link to="/" className="articles-link">
+            Log-in
+          </Link>
         </div>
       </nav>
+      </div>
     </>
   );
 };
