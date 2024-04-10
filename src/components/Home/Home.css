@@ -4,30 +4,32 @@
 
 .welcome-text-title {
   color: rgba(255, 255, 255, 0.709);
-  font-size: 40px;
+  font-size: 7vw;
   text-align: center;
   font-family: 'Moondog Fifteen';
-  padding-top: 80px;
+  padding-top: 5vw;
   margin-top: -0.1px;
+  margin-bottom: -2vw;
 }
 
 .welcome-text {
   color: rgba(255, 255, 255, 0.709);
-  font-size: 30px;
+  font-size: 3vw;
   text-align: center;
   font-family: 'Moondog Fifteen';
 }
 
 .home-img-container-main {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   justify-content: center;
   align-items: center;
   list-style: none;
+  margin-right: 80px;
+  margin-left: 40px;
 }
 
 .home-background-img {
-  width: 100%;
+  width: 99%;
 }
 
 .intro-text {
@@ -36,8 +38,8 @@
   line-height: 200%;
   padding-left: 15%;
   padding-right: 15%;
-  font-size: 20px;
-  padding-bottom: 5%;
+  font-size: 1.2vw;
+  padding-bottom: 1%;
   font-family: 'Moondog Fifteen';
 }
 

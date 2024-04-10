@@ -4,11 +4,11 @@
 }
 
 .article-page-title {
-  font-size: 35px;
+  font-size: 2.4vw;
   color: black;
   font-weight: bold;
   margin-left: 8%;
-  margin-bottom: 50px;
+  margin-bottom: 3.5vw;
 }
 
 .article-content-container {
@@ -19,21 +19,22 @@
 .article-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.4vw;
+  padding-right: 1.4vw;
   color: black;
   list-style: none; 
+  width: 95%;
 }
 
 .article-container {
   font-size: 18px;
   text-align: center;
-  width: 300px;
 }
+
 
 .main-container {
   text-align: center;
-  font-size: 15px;
+  font-size: 1.25vw;
 }
 
 .article-image-container:hover {
@@ -45,16 +46,16 @@
 }
 
 .article-image {
-  width: 280px;
-  height: 180px;
-  border-radius: 15px;
-  padding: 10px;
+  width: 19vw;
+  height: 12vw;
+  border-radius: 1.25vw;
+  padding: 0.7vw;
 }
 
 .article-title {
   font-family: 'moondog fifteen';
-  font-size: 20px;
-  height: 80px;
+  font-size: 1.3vw;
+  height: 5.6vw;
   padding-left: 5%;
   padding-right: 5%;
   color: black;
@@ -70,10 +71,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 10px;
-  margin-top: 10px;
+  padding-left: 1.35vw;
+  padding-right: 1.35vw;
+  font-size: 0.7vw;
+  margin-top: 0.7vw;
 }
 
 .author-container:hover,

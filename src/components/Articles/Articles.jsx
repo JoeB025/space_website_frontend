@@ -45,8 +45,10 @@ export default function Articles() {
       <section>
         <h1 className="article-page-title">Articles</h1>
         <div className="article-content-container">
+
+          
           <div className="art-dropdown">
-            <p className="art-dropdown-button">Select Your Topic:</p>
+            <p className="art-dropdown-button">Select Your Topic ⌵</p>
             <div className="art-dropdown-content">
               <ul className="drop-down-topic-list">
                 <h2 className="topic-container-drop-down">
@@ -71,7 +73,7 @@ export default function Articles() {
           <ul className="article-list">
             {filteredArticles.map((article) => (
               <h2 key={article.title} className="article-container">
-                <li>
+                <li className="test">
                   <div className="main-container">
                     <div className="article-image-container">
                       <img
