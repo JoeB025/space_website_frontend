@@ -2,7 +2,7 @@
   border: none;
   outline: none;
   color: grey;
-  font-size: 20px;
+  font-size: 1.32vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,10 +14,8 @@
   border: none;
   outline: none;
   color: grey;
-  font-size: 25px;
+  font-size: 3vw;
   background-color: inherit;
-  display: flex;
-  flex-direction: column;
   justify-content: top;
 }
 
@@ -25,32 +23,57 @@
   color: white;
 }
 
-.dropdown-content {
+.dropdown-content-planets,
+.dropdown-content-explore {
   display: none;
   position: absolute;
   background-color: grey;
-  min-width: 80px;
+  min-width: 5.5555555vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  margin-top: 450px;
 }
 
-.dropdown-content a {
+.dropdown-content-planets {
+  margin-top: 32.5vw;
+}
+
+.dropdown-content-explore {
+  margin-top: 20vw;
+}
+
+
+.dropdown-content-planets a {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 0.83vw 1.11vw;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown-content-explore a {
+  float: none;
+  color: black;
+  padding: 0.83vw 1.11vw;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-planets a:hover {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
+
+.dropdown-content-explore a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content-planets, 
+.dropdown:hover .dropdown-content-explore {
   display: block;
 } 
+
 
 
 

@@ -20,9 +20,9 @@ const NavBar = () => {
 
           <div className="dropdown">
             <button className="dropdown-button">
-              <i>Planets &#x290B;</i>
+              <p>Planets ⌵</p>
             </button>
-            <div className="dropdown-content">
+            <div className="dropdown-content-planets">
               <Link to="planets">All Planets</Link>
               <Link to="/planets/1">Mercury</Link>
               <Link to="/planets/2">Venus</Link>
@@ -35,38 +35,26 @@ const NavBar = () => {
             </div>
           </div>
 
-          <Link to="moons" className="articles-link">
-            Moons
-          </Link>
-
-          <Link to="galaxies" className="articles-link">
-            Galaxies
-          </Link>
-
-          <Link to="stars" className="articles-link">
-            Stars
-          </Link>
-
-          <Link to="black_holes" className="articles-link">
-            Black Holes
-          </Link>
-
-          <Link to="astronomy_info" className="articles-link">
-          Celestial Entities
-          </Link>
+          <div className="dropdown">
+            <button className="dropdown-button">
+            <p>Explore ⌵</p>      
+            </button>
+            <div className="dropdown-content-explore">
+  <Link to="moons">Moons</Link>
+          <Link to="galaxies">Galaxies</Link>
+          <Link to="stars">Stars</Link>
+          <Link to="black_holes">Black Holes</Link>
+          <Link to="astronomy_info">Celestial Entities</Link>
+            </div>
+          </div>
+        
 
      
         </div>
 
         <div className="nav-right">
-          <Link to="users" className="articles-link">
-            Users
-          </Link>
-          <Link to="/" className="articles-link">
-            Sign-up
-          </Link>
-          <Link to="/" className="articles-link">
-            Log-in
+          <Link to="users" className="articles-link-user">
+            Users 
           </Link>
         </div>
       </nav>
