@@ -1,10 +1,10 @@
 .star-ordered-list {
   border: solid rgb(111, 111, 111) 2px;
-  margin-bottom: 100px;
+  margin-bottom: 7vw;
 }
 
 .star-ordered-list:hover {
-  box-shadow: 0px 0px 3px 3px grey;
+  box-shadow: 0px 0px 0.25vw 0.25vw grey;
 }
 
 .star-data-container {
@@ -16,23 +16,24 @@
 .star-name {
   text-align: center;
   color: rgb(170, 170, 170);
-  font-size: 50px;
+  font-size: 4vw;
   transition: 2s;
 }
 
 .star-name:hover {
   color: rgb(112, 0, 0);
-  font-size: 60px;
+  font-size: 5vw;
 }
 
 .star-img-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -2vw;
 }
 
 .star-image {
-  width: 200px;
+  width: 13.5vw;
 }
 
 
@@ -41,15 +42,20 @@
   flex-direction: row;
   justify-content: space-evenly;
   color: rgb(216, 101, 0);
-  padding-right: 10%;
+  padding-right: 2%;
 }
 
 .star-left-section,
 .star-right-section {
-  font-size: 18px;
+  font-size: 1.2vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-left: 2vw;
+}
+
+.star-left-section {
+  margin-right: 3vw;
 }
 
 .star-facts:hover {
@@ -61,6 +67,6 @@
 
 .star-description-container {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.75vw;
   color: grey;
 }

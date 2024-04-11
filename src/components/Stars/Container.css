@@ -1,6 +1,6 @@
 .star-page-container {
   background-color: rgb(0, 0, 0);
-  padding-top: 40px;
+  padding-top: 2.7vw;
 }
 
 .star-intro-heading-container {
@@ -8,12 +8,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 3.5vw;
 }
 
 .star-icon-container {
   color: grey;
-  font-size: 30px;
+  font-size: 3vw;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -38,7 +38,7 @@ color: orangered;
 
 .stars-intro-heading {
   font-family: 'Knockout Punch';
-  font-size: 50px;
+  font-size: 5vw;
   color: rgb(255, 255, 255);
   text-align: center;
   text-decoration: none;
@@ -46,17 +46,17 @@ color: orangered;
 
 .stars-intro-text {
   font-family: 'moondog fifteen';
-  font-size: 20px;
+  font-size: 1.75vw;
   color: grey;
   padding-left: 10%;
   padding-right: 10%;
   text-align: justify;
-  margin-bottom: 120px;
+  margin-bottom: 8vw;
 }
 
 .stars-list-container {
   list-style: none;
-  margin-right: 40px;
+  margin-right: 2.77777vw;
 }
 
 

@@ -23,6 +23,7 @@ export default function GalaxyData() {
     <>
     <div className="galaxy-page-container">
       <h1 className="galaxies-page-header">Galaxies</h1>
+      <div className="galaxy-intro-text-container">
       <p className="galaxy-intro-text">In the vast expanse of the cosmos, galaxies stand as colossal islands of stars, gas, dust, and dark matter, bound together by gravity and swirling through the cosmic dance of the universe. These cosmic entities, each containing billions to trillions of stars, have captured the imagination of scientists and stargazers alike, offering glimpses into the awe-inspiring complexity and beauty of our universe.</p>
       <p className="galaxy-intro-text">Galaxies are immense systems composed of stars, stellar remnants, interstellar gas, dust, and dark matter, held together by gravitational forces. They are the fundamental building blocks of the universe, forming the backdrop against which the drama of cosmic evolution unfolds. Estimates suggest that the observable universe contains more than 100 billion galaxies, each with its own distinct characteristics and history. These galaxies range in size from dwarfs containing only a few million stars to giants hosting trillions of stars. They are distributed across the vast cosmic landscape, clustering together in cosmic filaments and superclusters, separated by immense voids of seemingly empty space.</p>
       <p className="galaxy-intro-text">Galaxies come in a diverse array of shapes and sizes, categorized into several main types. Spiral galaxies feature a distinctive spiral structure, with arms winding outward from a central bulge. Examples include the iconic Andromeda Galaxy and our own Milky Way. Elliptical galaxies are shaped like ellipsoids, ranging from nearly spherical to highly elongated. They typically lack the prominent spiral arms seen in spiral galaxies and contain older stars. Irregular galaxies lack a well-defined structure and often exhibit chaotic shapes. They are characterized by ongoing star formation and are thought to result from gravitational interactions or mergers between galaxies.</p>
@@ -31,7 +32,7 @@ export default function GalaxyData() {
       <p className="galaxy-intro-text">Galaxies span a vast range of sizes, from dwarfs measuring only a few thousand light-years across to giants stretching hundreds of thousands of light-years in diameter. The Milky Way, our home galaxy, boasts a diameter of approximately 100,000 light-years, while giants like the Andromeda Galaxy extend over 220,000 light-years.</p>
       <p className="galaxy-intro-text">Galaxies stand as monumental cosmic entities, weaving together the fabric of the universe and offering windows into the mysteries of space and time. From their diverse shapes and sizes to the cosmic dramas unfolding within their depths, galaxies continue to captivate and inspire humanity's quest for understanding the cosmos.</p>
       <p className="galaxy-intro-text">Below, we can explore some of the most observed galaxies, exploring their size, type and distance from earth.</p>
-
+</div>
       
         <ul className="galaxies-data-container">
           {galaxyList.map((galaxy) => {
@@ -57,7 +58,7 @@ export default function GalaxyData() {
                   <div className="galaxy-mid-section">
                     <div className="obs-history-container">
                       <h3 className="observation-heading">Observation History</h3>
-                      <p>{galaxy.observation_history}</p>
+                      <p className="galaxy-main-text">{galaxy.observation_history}</p>
                     </div>
                     <div className="galaxy-img-container">
                       <img
@@ -72,7 +73,7 @@ export default function GalaxyData() {
                   <h4 className="timeline-heading">
                     Timeline of {galaxy.galaxy_name}
                   </h4>
-                  <p className="galaxy-timeline-text">{galaxy.timeline}</p>
+                  <p className="galaxy-main-text">{galaxy.timeline}</p>
                 </div>
                 </div>
               </li>

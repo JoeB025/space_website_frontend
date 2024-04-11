@@ -1,32 +1,46 @@
 .sun-container {
   color: white;
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 13vw;
+}
+
+.sun-headings-container {
+  font-size: 2vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: orangered;
+  margin-bottom: -1vw;
+  text-decoration: underline;
 }
 
 .sun-main-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  gap: 4vw;
 }
 
 .sun-title-container {
-  font-size: 50px;
+  font-size: 5vw;
   color: rgb(255, 238, 0);
   transition: 2s;
-  margin-left: 500px;
-  margin-right: 500px;
 }
 
 .sun-title-container:hover {
-  font-size: 70px;
+  font-size: 7vw;
   color: orangered
+}
+
+.sun-sub-heading {
+  text-align: center;
+  border: solid red 2px;
 }
 
 .sun-facts-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-size: 20px;
+  font-size: 1.75vw;
+  margin-top: -5vw;
 }
 
 .sun-facts:hover {
@@ -34,22 +48,22 @@
 }
 
 .sun-description-container {
-  font-size: 18px;
+  font-size: 1.75vw;
   color: rgb(216, 101, 0);
   padding-right: 5%;
-  text-align: justify;
+  text-align: justify
 }
 
 .sun-bottom-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.75vw;
 }
 
 .sun-description-container-p2 {
-  font-size: 18px;
+  font-size: 1.75vw;
   color: rgb(216, 101, 0);
   text-align: justify;
   padding-right: 10%;
@@ -57,7 +71,8 @@
 }
 
 .sun-image {
-  width: 200px;
+  width: 13.5vw;
+  margin-right: 5vw;
 }
 
 

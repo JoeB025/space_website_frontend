@@ -10,7 +10,7 @@ export default function Planets() {
   useEffect(() => {
     getPlanets().then((response) => {
       setPlanetList(response.data.planet);
-      setLoading(false)
+      setLoading(false);
     });
   }, []);
 
@@ -162,7 +162,7 @@ export default function Planets() {
                 return (
                   <h4 key={planet.name} className="planet-string">
                     <li>
-                      <div className="planet-main-container">
+                      <div className="planet-main-container-earth">
                         <div className="planet-info-container">
                           <p className="planet-name">{planet.name}</p>
                           <p className="planet-type">
@@ -277,7 +277,7 @@ export default function Planets() {
           </ul>
         </section>
 
-        <section className="planet-img-bottom-section">
+        {/* <section className="planet-img-bottom-section">
           <ul className="planet-image-list-bottom">
             {planetList.map((planet) => {
               let className = "planet-order-images-bottom"; // Default className
@@ -318,7 +318,7 @@ export default function Planets() {
               );
             })}
           </ul>
-        </section>
+        </section> */}
 
         <div className="all-planet-bottom-links">
           <Link to="/" className="all-planets-back-home">

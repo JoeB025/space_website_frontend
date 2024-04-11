@@ -14,7 +14,7 @@
 .orbiting-uranus-title,
 .orbiting-neptune-title {
   text-align: center;
-  font-size: 50px;
+  font-size: 7vw;
   font-weight: bold;
   padding-top: 3%;
   border-top: solid white 3px;
@@ -54,7 +54,7 @@
 }
 
 .moon-page-des-heading {
-  font-size: 25px;
+  font-size: 3.5vw;
 }
 
 .moon-page-des-heading:hover {
@@ -63,7 +63,7 @@
 
 .moon-page-description {
   font-family: "moondog fifteen";
-  font-size: 20px;
+  font-size: 1.7vw;
   text-align: justify;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .name-dist-headings-container {
-  font-size: 25px;
+  font-size: 3vw;
   color: grey;
   font-weight: bold;
   display: grid;
@@ -101,7 +101,7 @@
   grid-template-columns: 1fr 1fr;
   text-align: center;
   margin-left: -40px;
-  font-size: 20px;
+  font-size: 2vw;
   color: grey;
 }
 
@@ -111,11 +111,11 @@
 
 .other-moons-title {
   text-align: center;
-  font-size: 30px;
+  font-size: 4vw;
   color: grey;
-  margin-top: 50px;
+  margin-top: 7vw;
   border-top: white 1px solid;
-  padding-top: 50px;
+  padding-top: 7vw;
 }
 
 .other-moons-title:hover {
@@ -124,13 +124,14 @@
 
 .moon-list-container2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   color: rgb(135, 0, 0);
+  font-size: 1.5vw;
+  margin-left: -40px;
 }
 
 .moon-array-containers {
   text-align: center;
-  margin-left: -40px;
 }
 
 .moon-array-containers:hover {

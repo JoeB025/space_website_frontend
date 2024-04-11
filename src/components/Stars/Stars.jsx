@@ -81,8 +81,16 @@ export default function StarData() {
                       <div className="sun-title-container">
                         <p className="sun-title">The {star.name}</p>
                       </div>
+                      <div className="sun-headings-container">
+
+                        <h2>Facts</h2>
+                        <h2>Description</h2>
+                      </div>
+                      
                       <div className="sun-main-container">
+                        
                         <div className="sun-facts-container">
+                         
                           <p className="sun-facts">Type: {star.type}</p>
                           <p className="sun-facts">
                             Luminosity: {star.luminosity}
