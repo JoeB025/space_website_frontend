@@ -1,0 +1,29 @@
+.home-img-container-main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: 80px;
+  margin-left: 40px;
+}
+
+.home-background-img {
+  width: 99%;
+}
+
+
+.home-img-container-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.home-background-img-bottom {
+  width: 96vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

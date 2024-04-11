@@ -91,24 +91,37 @@ export default function Articles() {
                       </Link>
                     </div>
                   </div>
+
+
+
                   <div className="topic-author-container">
+
+
                     <div className="author-container">
                       <p className="article-author-desc">
                         Author:{" "}
-                        <span className="article-author-name">
+                        <p className="article-author-name">
                           {article.author}
-                        </span>
+                        </p>
                       </p>
                     </div>
+
+
                     <div className="topic-container">
                       <p className="article-topic-desc">
                         Topic:{" "}
-                        <span className="article-topic-name">
+                        <p className="article-topic-name">
                           {article.topic}
-                        </span>
+                        </p>
                       </p>
                     </div>
+
+
                   </div>
+
+
+
+
                   <p className="article-votes">💙 {article.votes}</p>
                 </li>
               </h2>
@@ -116,6 +129,9 @@ export default function Articles() {
           </ul>
         </div>
       </section>
+
+
+      
       <div className="all-article-bottom-links">
         <Link to="/" className="articles-back-home">
           Home

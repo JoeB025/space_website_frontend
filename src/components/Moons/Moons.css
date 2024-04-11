@@ -16,7 +16,8 @@
   text-align: center;
   font-size: 7vw;
   font-weight: bold;
-  padding-top: 3%;
+  padding-top: 5%;
+  margin-bottom: 0.35vw;
   border-top: solid white 3px;
   color: grey;
 }
@@ -63,7 +64,7 @@
 
 .moon-page-description {
   font-family: "moondog fifteen";
-  font-size: 1.7vw;
+  font-size: 2vw;
   text-align: justify;
 }
 
@@ -126,7 +127,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   color: rgb(135, 0, 0);
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin-left: -40px;
 }
 

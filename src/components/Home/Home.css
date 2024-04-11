@@ -1,6 +1,8 @@
 .home-container {
   background-color: rgba(0, 0, 0, 0.91);
+  height: 220vw;
 }
+
 
 .welcome-text-title {
   color: rgba(255, 255, 255, 0.709);
@@ -19,18 +21,6 @@
   font-family: 'Moondog Fifteen';
 }
 
-.home-img-container-main {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin-right: 80px;
-  margin-left: 40px;
-}
-
-.home-background-img {
-  width: 99%;
-}
 
 .intro-text {
   color: white;
@@ -38,17 +28,14 @@
   line-height: 200%;
   padding-left: 15%;
   padding-right: 15%;
-  font-size: 1.2vw;
+  font-size: 2vw;
   padding-bottom: 1%;
   font-family: 'Moondog Fifteen';
 }
 
-.portfolio-link {
-  text-align: center;
-  padding-bottom: 3%;
-  font-size: 30px;
-}
 
-.portfolio-link:hover {
-  color: gold;
-}
+
+
+
+
+

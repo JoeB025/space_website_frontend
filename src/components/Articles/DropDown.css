@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: top;
   align-items: center;
-  margin-top: 3.5vw;
+  margin-top: 8vw;
 }
 
 .art-dropdown-button {
@@ -12,16 +12,16 @@
 }
  
 .art-dropdown-button:hover {
-  color: rgb(0, 0, 142);
+  color: rgba(72, 72, 72, 0.605);
 }
 
 .art-dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ffffff;
   z-index: 1;
-  margin-top: 8.5vw;
   background-color: transparent;
+  background-color: rgb(183, 183, 183);
+  margin-top: 5vw;
 }
 
 .art-dropdown-content a {
@@ -29,18 +29,15 @@
 }
 
 .art-dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #ffffff;
 }
 
 .topic-container-drop-down {
-  height: 7vw;
+  height: 1.2vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 2.7777777vw;
-  background-color: rgb(143, 143, 143);
-  margin-top: -5vw;
-  width: 15.5vw;
+  margin-left: -40px;
 }
 
 
@@ -57,10 +54,10 @@
   background-color: transparent;
   border: none;
   font-size: 2vw;
+  color: black;
 }
 
 .topic-button:hover {
-  background-color: rgb(28, 0, 0);
   color: white;
 }
 

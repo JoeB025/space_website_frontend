@@ -1,4 +1,6 @@
 import "./Home.css";
+import "./Links.css"
+import "./Images.css"
 import { Link } from "react-router-dom";
 import { getImages } from "../../utils";
 import { useEffect, useState } from "react";
@@ -72,8 +74,27 @@ const Home = () => {
             space!
           </p>
         </div>
-        {/* <p className="portfolio-link">Link to portfolio page</p> */}
         <p className="portfolio-link">👩🏻‍🚀🧑🏿‍🚀👩🏻‍🚀👨🏾‍🚀🧑🏾‍🚀</p>
+        <ul className="home-img-container-bottom">
+          {imageList.map((img) => {
+            if (img.name === "solarSystem20") {
+              return (
+                <li key={img.id}>
+                  <img
+                    src={img.img_url}
+                    alt={img.name}
+                    className="home-background-img-bottom"
+                  />
+                </li>
+              );
+            }
+          })}
+        </ul>
+
+
+
+        {/* <p className="portfolio-link">Link to portfolio page</p> */}
+        
       </div>
     </>
   );

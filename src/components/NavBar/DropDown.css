@@ -14,7 +14,7 @@
   border: none;
   outline: none;
   color: grey;
-  font-size: 4vw;
+  font-size: 3vw;
   background-color: inherit;
   justify-content: top;
 }
@@ -29,13 +29,13 @@
   position: absolute;
   background-color: grey;
   min-width: 5.5555555vw;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0vw 0.555555vw 1.111111vw 0vw rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content-planets {
-  margin-top: 35vw;
-  margin-right: 2.7777777vw;
+  margin-top: 36vw;
+  margin-right: 1vw;
   width: 10.416vw;
 }
 
