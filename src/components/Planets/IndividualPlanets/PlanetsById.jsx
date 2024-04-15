@@ -17,7 +17,17 @@ export default function PlanetsById() {
     });
   }, [planets_id]);
 
-  if (loading) return <p className="loading-home-page">Loading {planetsById.name}...</p>;
+ 
+  if (loading)
+  return (
+    <>
+      <div className="loader-container">
+        <p className="loading-all-articles">Loading {planetsById.name}</p>
+        <div className="loader"></div>
+      </div>
+    </>
+  );
+
 
   return (
     <>

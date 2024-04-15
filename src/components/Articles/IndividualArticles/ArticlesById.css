@@ -5,7 +5,7 @@
 .single-article-title {
   text-align: center;
   color: rgba(210, 179, 0, 0.912);
-  font-size: 40px;
+  font-size: 4vw;
   padding-left: 15%;
   padding-right: 15%;
   font-family: 'Moondog Fifteen'
@@ -18,7 +18,7 @@
 
 .single-article-author {
   text-align: center;
-  font-size: 25px;
+  font-size: 3vw;
   color: rgba(210, 179, 0, 0.912);
   font-family: 'Moondog Fifteen'
 }
@@ -39,7 +39,7 @@
 }
 
 .single-article-img {
-  width: 20%;
+  width: 40%;
   border-radius: 20px;
   margin-bottom: 20px;
 }
@@ -49,14 +49,15 @@
   padding-right: 15%;
   line-height: 35px;
   text-align: justify;
-  font-size: 20px;
+  font-size: 2.75vw;
   color: rgba(210, 179, 0, 0.912);
-  font-family: 'Moondog Fifteen'
+  font-family: 'Moondog Fifteen';
+  line-height: 3.5vw;
 }
 
 .single-article-created {
   text-align: center;
-  font-size: 15px;
+  font-size: 2.75vw;
   color: rgba(189, 98, 0, 0.912);
 }
 
@@ -64,7 +65,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  font-size: 20px;
+  font-size: 2.75vw;
   color: rgba(210, 179, 0, 0.912);
 }
 
@@ -78,7 +79,7 @@
 
 .single-articles-back-home {
   font-family: 'Knockout Punch';
-  font-size: 30px;
+  font-size: 3vw;
   color: rgba(189, 98, 0, 0.912);
   width: 100%;
   text-decoration: none;

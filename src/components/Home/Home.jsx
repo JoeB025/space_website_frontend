@@ -1,6 +1,7 @@
 import "./Home.css";
 import "./Links.css"
 import "./Images.css"
+import "./Loading.css"
 import { Link } from "react-router-dom";
 import { getImages } from "../../utils";
 import { useEffect, useState } from "react";
@@ -17,7 +18,19 @@ const Home = () => {
     });
   }, []);
 
-  if (loading) return <p className="loading-home-page">Home Page Loading...</p>;
+  // if (loading) return <div className="loader"></div>
+
+  if (loading)
+  return (
+    <>
+      <div className="loader-container">
+        <p className="loading-home">Loading</p>
+        <div className="loader"></div>
+      </div>
+    </>
+  );
+
+
 
   return (
     <>

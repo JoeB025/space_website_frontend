@@ -1,12 +1,12 @@
 .home-container {
   background-color: rgba(0, 0, 0, 0.91);
-  height: 220vw;
+  height: 253vw;
 }
 
 
 .welcome-text-title {
   color: rgba(255, 255, 255, 0.709);
-  font-size: 7vw;
+  font-size: 8vw;
   text-align: center;
   font-family: 'Moondog Fifteen';
   padding-top: 5vw;
@@ -28,7 +28,7 @@
   line-height: 200%;
   padding-left: 15%;
   padding-right: 15%;
-  font-size: 2vw;
+  font-size: 3vw;
   padding-bottom: 1%;
   font-family: 'Moondog Fifteen';
 }

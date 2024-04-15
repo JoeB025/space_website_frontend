@@ -2,6 +2,8 @@ import "./Planets.css";
 import { getPlanets, getImages } from "../../utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./Links.css"
+import "./Loading.css"
 
 export default function Planets() {
   const [planetList, setPlanetList] = useState([]);
@@ -14,7 +16,15 @@ export default function Planets() {
     });
   }, []);
 
-  if (loading) return <p className="loading-home-page">Loading...</p>;
+  if (loading)
+  return (
+    <>
+      <div className="loader-container">
+        <p className="loading-all-articles">Loading All Planets</p>
+        <div className="loader"></div>
+      </div>
+    </>
+  );
 
   return (
     <>
@@ -124,6 +134,8 @@ export default function Planets() {
                             Earth years. Notably, {planet.name} hosts{" "}
                             {planet.number_of_moons} moons.
                           </p>
+
+                          
                           <div className="planet-quick-facts">
                             <p>
                               Highest Recorded Temperature:{" "}

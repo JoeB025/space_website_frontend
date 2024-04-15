@@ -1,6 +1,7 @@
 import "./Articles.css";
 import "./Links.css";
 import "./DropDown.css";
+import "./Loading.css";
 import { getArticles, getTopics } from "../../utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -33,11 +34,21 @@ export default function Articles() {
     setSelectedTopic(null);
   };
 
-  if (loading) return <p className="loading-all-articles">Articles loading...</p>;
+  if (loading)
+    return (
+      <>
+        <div className="loader-container">
+          <p className="loading-all-articles">Loading Articles</p>
+          <div className="loader"></div>
+        </div>
+      </>
+    );
 
   let filteredArticles = articleName;
   if (selectedTopic) {
-    filteredArticles = articleName.filter((article) => article.topic === selectedTopic);
+    filteredArticles = articleName.filter(
+      (article) => article.topic === selectedTopic
+    );
   }
 
   return (
@@ -45,8 +56,6 @@ export default function Articles() {
       <section>
         <h1 className="article-page-title">Articles</h1>
         <div className="article-content-container">
-
-          
           <div className="art-dropdown">
             <p className="art-dropdown-button">Select Your Topic ⌵</p>
             <div className="art-dropdown-content">
@@ -61,7 +70,10 @@ export default function Articles() {
                 {topicName.map((topic) => (
                   <h2 key={topic.slug} className="topic-container-drop-down">
                     <p key={topic.id}>
-                      <button onClick={() => handleTopicClick(topic.slug)} className="topic-button">
+                      <button
+                        onClick={() => handleTopicClick(topic.slug)}
+                        className="topic-button"
+                      >
                         {topic.slug}
                       </button>
                     </p>
@@ -73,54 +85,38 @@ export default function Articles() {
           <ul className="article-list">
             {filteredArticles.map((article) => (
               <h2 key={article.title} className="article-container">
-                <li className="test">
-                  <div className="main-container">
-                    <div className="article-image-container">
-                      <img
-                        src={article.article_img_url}
-                        className="article-image"
-                        alt={article.title}
-                      />
-                    </div>
-                    <div className="'info-container">
-                      <Link
-                        to={`/articles/${article.article_id}`}
-                        className="article-title"
-                      >
-                        {article.title}
-                      </Link>
-                    </div>
+                <li className="main-container">
+                  <div className="article-image-container">
+                    <img
+                      src={article.article_img_url}
+                      className="article-image"
+                      alt={article.title}
+                    />
+                  </div>
+                  <div className="article-title-container-test">
+                    <Link
+                      to={`/articles/${article.article_id}`}
+                      className="article-title"
+                    >
+                      {article.title}
+                    </Link>
                   </div>
 
-
-
                   <div className="topic-author-container">
-
-
                     <div className="author-container">
                       <p className="article-author-desc">
                         Author:{" "}
-                        <p className="article-author-name">
-                          {article.author}
-                        </p>
+                        <p className="article-author-name">{article.author}</p>
                       </p>
                     </div>
-
 
                     <div className="topic-container">
                       <p className="article-topic-desc">
                         Topic:{" "}
-                        <p className="article-topic-name">
-                          {article.topic}
-                        </p>
+                        <p className="article-topic-name">{article.topic}</p>
                       </p>
                     </div>
-
-
                   </div>
-
-
-
 
                   <p className="article-votes">💙 {article.votes}</p>
                 </li>
@@ -130,8 +126,6 @@ export default function Articles() {
         </div>
       </section>
 
-
-      
       <div className="all-article-bottom-links">
         <Link to="/" className="articles-back-home">
           Home
@@ -140,4 +134,3 @@ export default function Articles() {
     </div>
   );
 }
-

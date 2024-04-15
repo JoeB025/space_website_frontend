@@ -3,6 +3,7 @@ import { getBlackHoles } from "../../utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Links.css";
+import "./Loading.css"
 
 export default function BlackHoles() {
   const [blackHolesList, setBlackHolesList] = useState([]);
@@ -16,7 +17,15 @@ export default function BlackHoles() {
     });
   }, []);
 
-  if (loading) return <p className="loading-home-page">Loading...</p>;
+  if (loading)
+    return (
+      <>
+        <div className="loader-container">
+          <p className="loading-all-articles">Loading Black Holes</p>
+          <div className="loader"></div>
+        </div>
+      </>
+    );
 
   return (
     <>

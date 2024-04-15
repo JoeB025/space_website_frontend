@@ -34,15 +34,17 @@
 }
 
 .dropdown-content-planets {
-  margin-top: 36vw;
+  margin-top: 51vw;
   margin-right: 1vw;
-  width: 10.416vw;
+  width: 13.416vw;
+  font-size: 2.5vw;
 }
 
 .dropdown-content-explore {
-  margin-top: 22vw;
+  margin-top: 33vw;
   margin-right: 1vw;
-  width: 12.5vw;
+  width: 19.25vw;
+  font-size: 2.5vw;
 }
 
 

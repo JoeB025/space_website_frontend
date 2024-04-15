@@ -35,8 +35,8 @@
 }
 
 .earth-moon {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 4%;
+  padding-right: 4%;
   text-align: justify;
 }
 
@@ -48,9 +48,8 @@
 
 .earth-moon-desc {
   color: grey;
-  font-size: 2vw;
+  font-size: 2.75vw;
   font-family: "moondog fifteen";
-
 }
 
 .moon-page-astronaut-img {
