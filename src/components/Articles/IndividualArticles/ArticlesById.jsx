@@ -2,9 +2,11 @@ import { getArticlesById, getArticleComments } from "../../../utils";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./ArticlesById.css";
+import "./Links.css";
 import { Link } from "react-router-dom";
-import "./Loading.css"
+import "./Loading.css";
 import ArticleComments from "../../Comments/Comments";
+import LikeCount from "../../LikeButton/Likes";
 
 export default function ArticlesById() {
   const { article_id } = useParams();
@@ -34,16 +36,15 @@ export default function ArticlesById() {
     });
   }, [article_id]);
 
-
   if (loading)
-  return (
-    <>
-      <div className="loader-container">
-        <p className="loading-all-articles">Loading {articleById.title}</p>
-        <div className="loader"></div>
-      </div>
-    </>
-  );
+    return (
+      <>
+        <div className="loader-container">
+          <p className="loading-all-articles">Loading {articleById.title}</p>
+          <div className="loader"></div>
+        </div>
+      </>
+    );
 
   return (
     <>
@@ -72,16 +73,21 @@ export default function ArticlesById() {
         </p>
 
         <div className="votes-comment-count-container">
-          <p className="single-article-votes">Votes: {articleById.votes}</p>
+          <p className="single-article-votes">
+            <LikeCount article={articleById} />
+          </p>
+
           <p className="single-article-comment-count">
             Comment Count: {articleById.comment_count}
           </p>
         </div>
 
+        <ArticleComments
+          articleComments={articleComments}
+          setArticleComments={setArticleComments}
+        />
 
-        <ArticleComments articleComments={articleComments} setArticleComments={setArticleComments}/>
-
-        <div className="single-article-bottom-links">
+        <div className="single-articles-bottom-links">
           <Link to="/" className="single-articles-back-home">
             Home
           </Link>

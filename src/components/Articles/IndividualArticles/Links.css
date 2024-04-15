@@ -1,11 +1,11 @@
-.black-holes-bottom-links {
+.single-articles-bottom-links {
   width: 100%; 
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.black-holes-back-home {
+.single-articles-back-home {
   font-family: 'Knockout Punch';
   font-size: 3vw;
   color: grey;
@@ -13,6 +13,6 @@
   text-decoration: none;
 }
 
-.black-holes-back-home:hover {
+.single-articles-back-home:hover {
   color: rgb(0, 46, 132);
 }

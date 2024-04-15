@@ -1,10 +1,10 @@
 .single-article-container {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 
 .single-article-title {
   text-align: center;
-  color: rgba(210, 179, 0, 0.912);
+  color: rgb(253, 101, 74);
   font-size: 4vw;
   padding-left: 15%;
   padding-right: 15%;
@@ -12,14 +12,11 @@
   
 }
 
-.single-article-title:hover {
-  color: rgb(132, 0, 0);
-}
 
 .single-article-author {
   text-align: center;
   font-size: 3vw;
-  color: rgba(210, 179, 0, 0.912);
+  color: rgb(253, 101, 74);
   font-family: 'Moondog Fifteen'
 }
 
@@ -29,7 +26,7 @@
 
 .single-article-topic {
   padding: 20px;
-  color: rgba(189, 98, 0, 0.912);
+  color: rgb(0, 0, 0);
   font-size: 18px;
 }
 
@@ -47,44 +44,29 @@
 .single-article-body {
   padding-left: 15%;
   padding-right: 15%;
-  line-height: 35px;
   text-align: justify;
-  font-size: 2.75vw;
-  color: rgba(210, 179, 0, 0.912);
-  font-family: 'Moondog Fifteen';
-  line-height: 3.5vw;
+  font-size: 2.5vw;
+  color: rgba(0, 38, 108, 0.912);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .single-article-created {
   text-align: center;
   font-size: 2.75vw;
-  color: rgba(189, 98, 0, 0.912);
+  color: grey;
 }
 
 .votes-comment-count-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  font-size: 2.75vw;
-  color: rgba(210, 179, 0, 0.912);
-}
-
-
-.single-article-bottom-links {
-  width: 100%; 
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.single-articles-back-home {
-  font-family: 'Knockout Punch';
+  color: rgb(225, 79, 79);
+  align-items: center;
   font-size: 3vw;
-  color: rgba(189, 98, 0, 0.912);
-  width: 100%;
-  text-decoration: none;
 }
 
-.single-articles-back-home:hover {
-  color: rgb(0, 46, 132);
+.single-article-votes {
+  font-size: 4vw;
 }
+
+

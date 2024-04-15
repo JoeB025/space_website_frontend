@@ -56,4 +56,17 @@ export function getArticleComments(article_id) {
   return spaceWebsiteApi.get(`/api/articles/${article_id}/comments`);
 }
 
+export function updateVotes(article_id) {
+  return spaceWebsiteApi.patch(`/api/articles/${article_id}`, {inc_votes: 1});
+}
+
+export function insertComments(article_id, body, username) {
+  return spaceWebsiteApi.post(`/api/articles/${article_id}/comments`, 
+  {body : body, username : username}
+  )
+};
+
+export function deleteComments(comment_id) {
+  return spaceWebsiteApi.delete(`api/comments/${comment_id}`)
+}
 

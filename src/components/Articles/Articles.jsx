@@ -5,6 +5,7 @@ import "./Loading.css";
 import { getArticles, getTopics } from "../../utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import LikeCount from "../LikeButton/Likes";
 
 export default function Articles() {
   const [articleName, setArticleName] = useState([]);
@@ -117,8 +118,9 @@ export default function Articles() {
                       </p>
                     </div>
                   </div>
-
-                  <p className="article-votes">💙 {article.votes}</p>
+                  <p className="article-votes">
+                    <LikeCount article={article} />
+                  </p>
                 </li>
               </h2>
             ))}

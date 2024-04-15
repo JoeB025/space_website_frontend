@@ -1,13 +1,16 @@
 import "./Users.css";
 import { getUsers } from "../../utils";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Links.css";
 import "./Loading.css";
+import { UserContext } from './singleUser/SingleUser';
 
 export default function Users() {
   const [userList, setUserList] = useState([]);
   const [loading, setLoading] = useState([]);
+  const { user } = useContext(UserContext);
+  const { setUser } = useContext(UserContext);
 
   useEffect(() => {
     getUsers().then((response) => {
@@ -36,7 +39,7 @@ export default function Users() {
           <ul className="list-container">
             {userList.map((user) => {
               return (
-                <li key={user.id} className="user-container-main">
+                <li key={user.id} className="user-container-main" onClick={() => {{setUser(user)}; alert=(`Signed in as ${user.username}`)}}>
                   <div className="user-container-layout">
                     <div className="user-info-container">
                       <p className="user-name">{user.name}</p>

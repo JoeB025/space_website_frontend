@@ -6,13 +6,8 @@ export const UserProvider = ({ children }) => {
   const [user, setUser] = useState({
     name : 'Bugs Bunny',
     username: 'BigCarrot1940',
-    avatar_url: 'https://www.flaticon.com/free-icon/carrot_1514935' 
+    avatar_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Bugs_Bunny.svg/800px-Bugs_Bunny.svg.png' 
   });
-
-
-  // function updateUser(newUser) {
-  //   setUser(newUser)
-  // }
 
 
   return (
