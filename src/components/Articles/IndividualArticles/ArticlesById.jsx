@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import "./Loading.css";
 import ArticleComments from "../../Comments/Comments";
 import LikeCount from "../../LikeButton/Likes";
+import PostUserComments from "../../Comments/PostComments/PostUserComments";
 
 export default function ArticlesById() {
   const { article_id } = useParams();
@@ -81,6 +82,8 @@ export default function ArticlesById() {
             Comment Count: {articleById.comment_count}
           </p>
         </div>
+
+        <PostUserComments articleComments={articleComments} setArticleComments={setArticleComments} />
 
         <ArticleComments
           articleComments={articleComments}

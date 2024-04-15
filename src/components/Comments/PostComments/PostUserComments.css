@@ -1,0 +1,33 @@
+.post-comments-container {
+  text-align: center;
+  border-top: rgb(0, 88, 115) solid 3px;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  padding-top: 2vw;
+}
+
+.add-comments-title {
+  font-size: 4vw;
+  color: rgb(0, 88, 115);
+}
+
+.submit-comment-form input{
+  text-indent: 10px;
+  border: dashed 0.6vw rgb(0, 88, 115);
+  margin-bottom: 2vw;
+  border-radius: 0.5vw;
+  color: rgb(0, 88, 115);
+  width: 50vw;
+  height: 10vw;
+  font-size: 1.75vw;
+}
+
+.submit-comment-button {
+  width: 15vw;
+  height: 4vw;
+  font-size: 1.5vw;
+  border-radius: 2vw;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(0, 88, 115);
+}

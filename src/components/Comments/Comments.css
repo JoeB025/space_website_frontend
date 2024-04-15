@@ -68,3 +68,27 @@
   font-size: 2.5vw;
   text-align: justify;
 }
+
+.delete-button-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 2vw;
+  padding-right: 2vw;
+}
+
+.delete-button {
+  border-radius: 5vw;
+  height: 4vw;
+  width: 15vw;
+  font-size: 2vw;
+  background-color: black;
+  color: white;
+}
+
+.no-comments-notice {
+  text-align: center;
+  font-size: 2.5vw;
+  color: grey;
+  margin-top: 5vw;
+}
