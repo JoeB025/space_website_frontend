@@ -52,4 +52,8 @@ export function getTopics() {
   return spaceWebsiteApi.get("/api/topics")
 }
 
+export function getArticleComments(article_id) {
+  return spaceWebsiteApi.get(`/api/articles/${article_id}/comments`);
+}
+
 

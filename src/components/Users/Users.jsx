@@ -2,7 +2,7 @@ import "./Users.css";
 import { getUsers } from "../../utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./Links.css"
+import "./Links.css";
 import "./Loading.css";
 
 export default function Users() {
@@ -34,35 +34,23 @@ export default function Users() {
 
         <section>
           <ul className="list-container">
-
             {userList.map((user) => {
               return (
-
-           
                 <li key={user.id} className="user-container-main">
-   
-
-   <div className="user-container-layout">
+                  <div className="user-container-layout">
                     <div className="user-info-container">
                       <p className="user-name">{user.name}</p>
                       <p className="user-username">{user.username}</p>
                     </div>
 
-          
                     <div className="user-img-container">
-                      
                       <img
                         src={user.avatar_url}
                         className="user-img"
                         alt={user.name}
                       />
                     </div>
-                 
-            </div>
-                
-         
-                
-                
+                  </div>
                 </li>
               );
             })}

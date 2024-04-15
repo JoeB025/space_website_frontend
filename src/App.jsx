@@ -13,6 +13,7 @@ import BlackHoles from "./components/BlackHoles/BlackHoles";
 import AstronomyData from "./components/Astronomy/AstronomyData"
 import GalaxyData from "./components/Galaxies/Galaxies";
 import StarData from "./components/Stars/Stars";
+import ArticleComments from "./components/Comments/Comments";
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
         <Route path="/astronomy_info" element={<AstronomyData />} />
         <Route path="/galaxies" element={<GalaxyData />} />
         <Route path="/stars" element={<StarData />} />
+        <Route
+          path="/articles/:article_id/comments"
+          element={<ArticleComments />}
+        />
       </Routes>
     </>
   );

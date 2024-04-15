@@ -14,11 +14,9 @@ const Home = () => {
     getImages().then((response) => {
       setImageList(response.data.image);
       setLoading(false);
-      console.log(response.data.image);
     });
   }, []);
 
-  // if (loading) return <div className="loader"></div>
 
   if (loading)
   return (

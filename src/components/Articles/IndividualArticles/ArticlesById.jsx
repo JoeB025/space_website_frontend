@@ -1,14 +1,16 @@
-import { getArticlesById } from "../../../utils";
+import { getArticlesById, getArticleComments } from "../../../utils";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./ArticlesById.css";
 import { Link } from "react-router-dom";
 import "./Loading.css"
+import ArticleComments from "../../Comments/Comments";
 
 export default function ArticlesById() {
   const { article_id } = useParams();
   const [articleById, setArticleById] = useState({});
   const [loading, setLoading] = useState(true);
+  const [articleComments, setArticleComments] = useState([]);
 
   useEffect(() => {
     getArticlesById(article_id).then((response) => {
@@ -25,6 +27,12 @@ export default function ArticlesById() {
     const day = String(date.getDate()).padStart(2, "0");
     return `${day}-${month}-${year}`;
   };
+
+  useEffect(() => {
+    getArticleComments(article_id).then((response) => {
+      setArticleComments(response.data.comments);
+    });
+  }, [article_id]);
 
 
   if (loading)
@@ -69,6 +77,9 @@ export default function ArticlesById() {
             Comment Count: {articleById.comment_count}
           </p>
         </div>
+
+
+        <ArticleComments articleComments={articleComments} setArticleComments={setArticleComments}/>
 
         <div className="single-article-bottom-links">
           <Link to="/" className="single-articles-back-home">
