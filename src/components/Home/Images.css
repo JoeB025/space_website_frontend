@@ -1,5 +1,5 @@
 .home-img-container-main {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -8,7 +8,11 @@
 }
 
 .home-background-img {
-  width: 99%;
+  width: 35vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

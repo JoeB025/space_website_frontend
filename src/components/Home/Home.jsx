@@ -85,7 +85,7 @@ const Home = () => {
             space!
           </p>
         </div>
-        <p className="portfolio-link">👩🏻‍🚀🧑🏿‍🚀👩🏻‍🚀👨🏾‍🚀🧑🏾‍🚀</p>
+        <p className="space-man-icon">👩🏻‍🚀🧑🏿‍🚀👩🏻‍🚀👨🏾‍🚀🧑🏾‍🚀</p>
         <ul className="home-img-container-bottom">
           {imageList.map((img) => {
             if (img.name === "solarSystem20") {
@@ -103,8 +103,7 @@ const Home = () => {
         </ul>
 
 
-
-        {/* <p className="portfolio-link">Link to portfolio page</p> */}
+        <p className="portfolio-link">J Scott-Bentley</p>
         
       </div>
     </>

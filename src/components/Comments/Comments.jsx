@@ -68,11 +68,10 @@ export default function ArticleComments(props) {
                     </p>
                   </div>
 
-                  <p className="comment-data-posted">
-                    Posted: {formatDate(comments.created_at)}
-                  </p>
+                 
 
                   <div className="delete-button-container">
+             
                     {user.username === comments.author && (
                       <button
                         className="delete-button"
@@ -86,6 +85,10 @@ export default function ArticleComments(props) {
                       </button>
                     )}
                   </div>
+       <p className="comment-data-posted">
+                    Posted: {formatDate(comments.created_at)}
+                  </p>
+                  
                 </li>
               </h2>
             );

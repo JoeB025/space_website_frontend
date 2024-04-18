@@ -7,14 +7,11 @@
 
 .comments-title {
   text-align: center;
-  font-size: 4vw;
   text-decoration: underline;
-  margin-bottom: -1vw;
   color: rgba(158, 158, 158, 0.763);
   border-top: solid rgb(88, 88, 88) 3px;
   margin-left: 4vw;
   margin-right: 4vw;
-  padding-top: 10vw;
 }
 
 .comment-list {
@@ -27,9 +24,9 @@
   display: flex;
   flex-direction: column;
   border: solid rgb(135, 135, 135) 2px;
-  border-radius: 5vw;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  border-radius: 10px;
+  padding-left: 4vw;
+  padding-right: 4vw;
   margin-right: 40px;
 }
 
@@ -55,33 +52,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.5vw;
 }
 
 .comment-data-posted {
   text-align: center;
-  font-size: 2.5vw;
   color: grey;
 }
 
 .comment-text {
-  font-size: 2.5vw;
   text-align: justify;
+  margin-left: 3px;
 }
+
+
 
 .delete-button-container {
   display: flex;
-  justify-content: right;
-  align-items: center;
-  margin-bottom: 2vw;
-  padding-right: 2vw;
+  justify-content: left;
 }
 
 .delete-button {
-  border-radius: 5vw;
-  height: 4vw;
-  width: 15vw;
-  font-size: 2vw;
   background-color: black;
   color: white;
 }
@@ -91,4 +81,93 @@
   font-size: 2.5vw;
   color: grey;
   margin-top: 5vw;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .comments-title {
+    font-size: 18px; 
+    margin-bottom: -10px;
+    padding-top: 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .comments-title {
+    font-size: 50px;
+    margin-bottom: 30px;
+    padding-top: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .user-comments-username {
+    font-size: 12px; 
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .user-comments-username {
+    font-size: 25px;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .comment-text {
+    font-size: 8px; 
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .comment-text {
+    font-size: 20px; 
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .comment-data-votes {
+    font-size: 8px; 
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .comment-data-votes {
+    font-size: 20px; 
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .comment-data-posted {
+    font-size: 8px; 
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .comment-data-posted {
+    font-size: 14px; 
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .delete-button {
+    font-size: 7px; 
+    width: 45px;
+    height: 10px;
+
+    border: none;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .delete-button {
+    font-size: 12px; 
+    width: 80px;
+    height: 20px;
+    border-radius: 40px;
+  }
 }

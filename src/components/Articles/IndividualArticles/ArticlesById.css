@@ -5,11 +5,21 @@
 .single-article-title {
   text-align: center;
   color: rgb(253, 101, 74);
-  font-size: 4vw;
   padding-left: 15%;
   padding-right: 15%;
-  font-family: 'Moondog Fifteen'
-  
+  font-family: 'Moondog Fifteen' 
+}
+
+@media only screen and (max-width: 767px) {
+  .single-article-title {
+    font-size: 16px; 
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .single-article-title {
+    font-size: 50px; /* Adjust the font size for larger screens */
+  }
 }
 
 
@@ -19,6 +29,20 @@
   color: rgb(253, 101, 74);
   font-family: 'Moondog Fifteen'
 }
+
+@media only screen and (max-width: 767px) {
+  .single-article-author {
+    font-size: 12px; 
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .single-article-author {
+    font-size: 30px; /* Adjust the font size for larger screens */
+  }
+}
+
+
 
 .single-article-author-name:hover {
   color: rgb(0, 46, 132);
@@ -42,12 +66,23 @@
 }
 
 .single-article-body {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
   text-align: justify;
-  font-size: 2.5vw;
   color: rgba(0, 38, 108, 0.912);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 767px) {
+  .single-article-body {
+    font-size: 12px; 
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .single-article-body {
+    font-size: 20px; /* Adjust the font size for larger screens */
+  }
 }
 
 .single-article-created {
@@ -62,7 +97,7 @@
   justify-content: space-evenly;
   color: rgb(225, 79, 79);
   align-items: center;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .single-article-votes {

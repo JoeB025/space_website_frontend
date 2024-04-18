@@ -1,9 +1,11 @@
 .portfolio-link {
   text-align: center;
-  padding-bottom: 3%;
   font-size: 2.5vw;
+  color: gold;
+  padding-bottom: 2.5%;
 }
 
-.portfolio-link:hover {
+.portfolio-link {
   color: gold;
 }
+
