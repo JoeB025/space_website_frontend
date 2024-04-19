@@ -1,3 +1,5 @@
+@media only screen and (max-width: 767px) {
+
 .moon-page-sections {
   padding-right: 3%;
   padding-left: 3%;
@@ -5,7 +7,7 @@
 
 .orbiting-planet-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
 }
 
 .orbiting-mars-title,
@@ -14,7 +16,7 @@
 .orbiting-uranus-title,
 .orbiting-neptune-title {
   text-align: center;
-  font-size: 7vw;
+  font-size: 20px;
   font-weight: bold;
   padding-top: 5%;
   margin-bottom: 0.35vw;
@@ -55,7 +57,7 @@
 }
 
 .moon-page-des-heading {
-  font-size: 3.5vw;
+  font-size: 11px;
 }
 
 .moon-page-des-heading:hover {
@@ -64,7 +66,8 @@
 
 .moon-page-description {
   font-family: "moondog fifteen";
-  font-size: 2.5vw;
+  font-size: 10px;
+  line-height: 12px;
   text-align: justify;
 }
 
@@ -76,7 +79,7 @@
 }
 
 .name-dist-headings-container {
-  font-size: 3vw;
+  font-size: 11px;
   color: grey;
   font-weight: bold;
   display: grid;
@@ -102,7 +105,7 @@
   grid-template-columns: 1fr 1fr;
   text-align: center;
   margin-left: -40px;
-  font-size: 2.75vw;
+  font-size: 10px;
   color: grey;
 }
 
@@ -112,7 +115,7 @@
 
 .other-moons-title {
   text-align: center;
-  font-size: 4vw;
+  font-size: 10px;
   color: grey;
   margin-top: 7vw;
   border-top: white 1px solid;
@@ -125,16 +128,178 @@
 
 .moon-list-container2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   color: rgb(135, 0, 0);
-  font-size: 2vw;
+  font-size: 7.5px;
   margin-left: -40px;
 }
 
 .moon-array-containers {
   text-align: center;
+  margin: 1px;
 }
 
 .moon-array-containers:hover {
   color: white;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* big screen */
+
+@media only screen and (min-width: 768px) {
+
+  .moon-page-sections {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+  
+  .orbiting-planet-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .orbiting-mars-title,
+  .orbiting-jupiter-title,
+  .orbiting-saturn-title,
+  .orbiting-uranus-title,
+  .orbiting-neptune-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 5%;
+    margin-bottom: 0.35vw;
+    border-top: solid white 3px;
+    color: grey;
+  }
+  
+  .orbiting-mars-title:hover {
+    color: rgb(193, 55, 0);
+  }
+  
+  .orbiting-jupiter-title:hover {
+    color: rgb(191, 149, 57);
+  }
+  
+  .orbiting-saturn-title:hover {
+    color: #effb97;
+  }
+  
+  .orbiting-uranus-title:hover {
+    color: rgb(81, 162, 255);
+  }
+  
+  .orbiting-neptune-title:hover {
+    color: rgb(22, 0, 167);
+  }
+  
+  
+  .moon-page-des-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    color: grey;
+  }
+  
+  .moon-page-des-heading {
+    font-size: 25px;
+  }
+  
+  .moon-page-des-heading:hover {
+    color: blue;
+  }
+  
+  .moon-page-description {
+    font-family: "moondog fifteen";
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+  }
+  
+  .moon-page-list-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  
+  .name-dist-headings-container {
+    font-size: 25px;
+    color: grey;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .moon-page-name,
+  .moon-page-dist {
+    text-align: center;
+  }
+  
+  .moon-page-name:hover,
+  .moon-page-dist:hover {
+    color: blue;
+  }
+  
+  .moon-list-container1 {
+    list-style: none;
+  }
+  
+  .moon-data-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-left: -40px;
+    font-size: 18px;
+    color: grey;
+  }
+  
+  .moon-data-container:hover {
+    color: white;
+  }
+  
+  .other-moons-title {
+    text-align: center;
+    font-size: 25px;
+    color: grey;
+    margin-top: 7vw;
+    border-top: white 1px solid;
+    padding-top: 7vw;
+  }
+  
+  .other-moons-title:hover {
+    color: blue;
+  }
+  
+  .moon-list-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: rgb(135, 0, 0);
+    font-size: 18px;
+    margin-left: -40px;
+  }
+  
+  .moon-array-containers {
+    text-align: center;
+  }
+  
+  .moon-array-containers:hover {
+    color: white;
+  }
+  }

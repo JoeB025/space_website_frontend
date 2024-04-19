@@ -1,63 +1,251 @@
-.planet-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  padding-left: 2.77777vw;
-  padding-right: 2.77777vw;
+@media only screen and (min-width: 768px) {
+
+.container-planets {
+  background-color: black;
+  font-family: "moondog fifteen";
+  margin-top: -25px;
 }
 
-.planet-main-container {
-  color: white;
-  height: 60vw;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-bottom: solid rgb(255, 140, 0) 3px;
-  padding-top: 5vw;
-  padding-bottom: 10vw;
-}
-
-.planet-main-container-earth {
-  color: white;
-  height: 140vw;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-bottom: solid rgb(255, 140, 0) 3px;
-  padding-top: 5vw;
-  padding-bottom: 20vw;
-}
-
-.planet-name {
-  font-size: 5vw;
-  margin-top: -3.5vw;
+.planet-page-title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
   color: grey;
+  font-family: "moondog fifteen";
+  padding-top: 50px;
+  padding-left: 40px;
 }
 
-.planet-name:hover {
-  color: rgb(34, 34, 34);
+/* planet image section top */
+
+.planet-image-list-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  list-style: none;
+  gap: 8vw;
+  margin-right: 20px;
 }
 
-.planet-info-container {
-  color: rgb(255, 140, 0);
-  text-align: justify;
+.planet-image-container-top {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 1.35vw;
-  padding-right: 1.35vw;
 }
+
+.mercury-image-top {
+  width: 70%;
+  animation: rotation 30s infinite linear;
+}
+
+.venus-image-top {
+  width: 90%;
+  animation: rotation 30s infinite linear;
+}
+
+.earth-image-top {
+  width: 110%;
+  animation: rotation 30s infinite linear;
+}
+
+.mars-image-top {
+  width: 100%;
+  animation: rotation 30s infinite linear;
+}
+
+.jupiter-image-top {
+  width: 420%;
+  animation: rotation 30s infinite linear;
+}
+
+.saturn-image-top {
+  width: 420%;
+  animation: rotation 30s infinite linear;
+}
+
+.uranus-image-top {
+  width: 200%;
+  animation: rotation 30s infinite linear;
+}
+
+.neptune-image-top {
+  width: 500%;
+  animation: rotation 30s infinite linear;
+  margin-left: 2vw;
+}
+
+.pluto-image-top {
+  width: 20%;
+  animation: rotation 30s infinite linear;
+  margin-left: 1vw;
+}
+
+
+
+
+
+
+
+/* Planet image section mid */
+
+.sub-heading {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 35px;
+  color: grey;
+  text-decoration: underline;
+}
+
+.sub-heading:hover {
+  color: rgb(132, 0, 0);
+  text-decoration: underline;
+}
+
+.planets-intro-text-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  border-bottom: solid 3px grey;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  color: rgb(255, 140, 0);
+}
+
+.planets-intro-text,
+.planets-intro-text-p2 {
+  text-align: center;
+  font-family: "moondog fifteen";
+  font-size: 22px;
+  line-height: 35px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* small screens */
 
 @media only screen and (max-width: 767px) {
-  .planet-info-container {
-    font-size: 10px;
-  }
-}
 
-@media only screen and (min-width: 768px) {
-  .planet-info-container  {
-    font-size: 14px; 
-    line-height: 30px;
+  .container-planets {
+    background-color: black;
+    font-family: "moondog fifteen";
+    margin-top: -10px;
   }
-}
+  
+  .planet-page-title {
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: grey;
+    font-family: "moondog fifteen";
+    padding-top: 10px;
+  }
+  
+  
+  .planet-image-list-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    list-style: none;
+    gap: 8vw;
+    margin-right: 20px;
+  }
+  
+  .planet-image-container-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mercury-image-top {
+    width: 70%;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .venus-image-top {
+    width: 90%;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .earth-image-top {
+    width: 110%;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .mars-image-top {
+    width: 100%;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .jupiter-image-top {
+    width: 420%;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .saturn-image-top {
+    width: 420%;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .uranus-image-top {
+    width: 200%;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .neptune-image-top {
+    width: 500%;
+    animation: rotation 30s infinite linear;
+    margin-left: 2vw;
+  }
+  
+  .pluto-image-top {
+    width: 20%;
+    animation: rotation 30s infinite linear;
+    margin-left: 1vw;
+  }
+  
+  .sub-heading {
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+    text-decoration: underline;
+  }
+  
+  .sub-heading:hover {
+    color: rgb(132, 0, 0);
+    text-decoration: underline;
+  }
+  
+  .planets-intro-text-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    border-bottom: solid 3px grey;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    color: rgb(255, 140, 0);
+  }
+  
+  .planets-intro-text,
+  .planets-intro-text-p2 {
+    text-align: center;
+    font-family: "moondog fifteen";
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  }

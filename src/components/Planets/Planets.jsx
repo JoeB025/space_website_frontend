@@ -1,4 +1,3 @@
-import "./Planets.css";
 import { getPlanets, getImages } from "../../utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -6,6 +5,7 @@ import "./Links.css"
 import "./Loading.css"
 import "./PlanetsMain.css"
 import "./PlanetTop.css"
+// import "./PlanetsBottom.css";
 
 export default function Planets() {
   const [planetList, setPlanetList] = useState([]);
@@ -82,10 +82,9 @@ export default function Planets() {
               Our solar system is a vast and fascinating collection of celestial
               bodies that orbit around a central star, the Sun. It consists of
               the Sun, eight planets, their moons, dwarf planets, asteroids,
-              comets, and other small celestial objects. Below, you can explore
-              the planets in our solar system.
+              comets, and other small celestial objects.
             </p>
-            <p className="planets-intro-text">
+            <p className="planets-intro-text-p2">
               Below, you can explore the planets in our solar system.
             </p>
           </div>
@@ -123,7 +122,7 @@ export default function Planets() {
                 return (
                   <h4 key={planet.name} className="planet-string">
                     <li>
-                      <div className="planet-main-container">
+                      <div className="planet-main-container-left">
                         <div className="planet-info-container">
                           <p className="planet-name">{planet.name}</p>
                           <p className="planet-type">
@@ -161,7 +160,7 @@ export default function Planets() {
                             to={`/planets/${planet.planets_id}`}
                             className="link-to-single-page"
                           >
-                            <p>🚀 Click here to travel to {planet.name} 🛸</p>
+                            <p>Enter {planet.name}?</p>
                           </Link>
                         </div>
                       </div>
@@ -225,7 +224,7 @@ export default function Planets() {
                             to={`/planets/${planet.planets_id}`}
                             className="link-to-single-page"
                           >
-                            <p>🚀 Click here to travel to {planet.name} 🛸</p>
+                            <p>Enter {planet.name}?</p>
                           </Link>
                         </div>
                       </div>
@@ -243,7 +242,7 @@ export default function Planets() {
                 return (
                   <h4 key={planet.name} className="planet-string">
                     <li>
-                      <div className="planet-main-container">
+                      <div className="planet-main-container-right">
                         <div className="planet-image-container">
                           <img
                             src={planet.img_url}
@@ -254,7 +253,7 @@ export default function Planets() {
                             to={`/planets/${planet.planets_id}`}
                             className="link-to-single-page"
                           >
-                            <p>🚀 Click here to travel to {planet.name} 🛸</p>
+                            <p>Enter {planet.name}?</p>
                           </Link>
                         </div>
 

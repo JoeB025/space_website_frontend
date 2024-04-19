@@ -1,9 +1,58 @@
+@media only screen and (min-width: 768px) {
 
+.planet-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 2.77777vw;
+  padding-right: 2.77777vw;
+}
+
+.planet-main-container-left,
+.planet-main-container-right {
+  color: white;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: solid rgb(255, 140, 0) 3px;
+  padding-top: 5vw;
+  padding-bottom: 10vw;
+}
+
+.planet-main-container-earth {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: solid rgb(255, 140, 0) 3px;
+  padding-top: 5vw;
+  padding-bottom: 10vw;
+}
+
+.planet-name {
+  font-size: 50px;
+  color: grey;
+}
+
+.planet-name:hover {
+  color: rgb(34, 34, 34);
+}
+
+.planet-info-container {
+  color: rgb(255, 140, 0);
+  font-size: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.35vw;
+  padding-right: 1.35vw;
+  line-height: 3vw;
+}
 
 .planet-quick-facts {
   display: flex;
   flex-direction: column;
-  font-size: 2vw;
   color: rgb(255, 140, 0);
 }
 
@@ -69,7 +118,7 @@
 }
 
 .link-to-single-page {
-  color: rgb(255, 140, 0);
+  color: rgb(255, 255, 255);
   font-size: 2vw;
   text-decoration: none;
   margin-top: 2.777777vw;
@@ -79,87 +128,159 @@
   color: rgb(132, 0, 0);
 }
 
-
-
-
-
-
-
-
-/* planet image bottom section */
-/* 
-.planet-img-bottom-section {
-  padding-left: 3.5vw;
-  padding-right: 3.5vw;
 }
 
-.planet-image-list-bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  list-style: none;
-}
 
-.planet-image-container-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.sun-image-bottom {
-  width: 25%;
-  border-radius: 700vw;
-}
 
-.mercury-image-bottom {
-  width: 1.3%;
-  margin-bottom: -17.36111vw;
-}
 
-.venus-image-bottom {
-  margin-bottom: -55.5555555vw;
-  width: 2.5%;
-}
 
-.earth-image-bottom {
-  margin-bottom: -38.194vw;
-  margin-right: 30.5555vw;
-  width: 3.5%;
-}
 
-.mars-image-bottom {
-  margin-bottom: -20.83333vw;
-  margin-left: 34.72vw;
-  width: 3%;
-}
 
-.jupiter-image-bottom {
-  margin-bottom: -7vw;
-  margin-left: 41.66vw;
-  width: 12%;
-}
 
-.saturn-image-bottom {
-  margin-top: -48.61vw;
-  margin-right: 41.66vw;
-  width: 13%;
-}
 
-.uranus-image-bottom {
-  margin-top: -800px;
-  margin-left: 48.61vw;
-  width: 6%;
-}
 
-.neptune-image-bottom {
-  margin-top: -30vw;
-  margin-right: 41.66vw;
-  width: 15%;
-}
 
-.pluto-image-bottom {
-  width: 1%;
-  margin-left: 76.38vw;
-  margin-top: -48.61vw;
-} */
 
+/* small screens */ 
+
+@media only screen and (max-width: 767px) {
+
+  .planet-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 2.77777vw;
+    padding-right: 2.77777vw;
+  }
+
+  .planet-main-container-left, 
+  .planet-main-container-right {
+  color: white;
+    display: grid;
+   border-bottom: solid rgb(255, 140, 0) 3px;
+    padding-top: 3vw;
+    padding-bottom: 8vw;
+  }
+  
+  .planet-main-container-left {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .planet-main-container-right {
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .planet-main-container-earth {
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-bottom: solid rgb(255, 140, 0) 3px;
+    padding-top: 3vw;
+    padding-bottom: 8vw;
+  }
+  
+  .planet-name {
+    font-size: 5vw;
+    margin-top: -3.5vw;
+    color: grey;
+  }
+  
+  .planet-name:hover {
+    color: rgb(34, 34, 34);
+  }
+  
+  .planet-info-container {
+    color: rgb(255, 140, 0);
+    font-size: 10px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.35vw;
+    padding-right: 1.35vw;
+    line-height: 4vw;
+  }
+  
+  .planet-quick-facts {
+    display: flex;
+    flex-direction: column;
+    font-size: 2vw;
+    color: rgb(255, 140, 0);
+  }
+  
+  .planet-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5vw;
+  }
+  
+  .mercury-image-mid {
+    width: 30%;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .venus-image-mid {
+    width: 30%;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .earth-image-mid {
+    width: 30%;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .mars-image-mid {
+    width: 50%;
+    border-radius: 200px;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .jupiter-image-mid {
+    width: 50%;
+    border-radius: 200px;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .saturn-image-mid {
+    width: 50%;
+    border-radius: 200px;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .uranus-image-mid {
+    width: 35%;
+    animation: rotation 30s infinite linear;
+  }
+  
+  .neptune-image-mid {
+    width: 60%;
+    border-radius: 200px;
+    animation: rotation 30s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+  .link-to-single-page {
+    color: rgb(249, 249, 249);
+    font-size: 8px;
+    text-decoration: none;
+    margin-top: 2.777777vw;
+  }
+  
+  .link-to-single-page:hover {
+    color: rgb(132, 0, 0);
+  }
+  
+  }
+  
