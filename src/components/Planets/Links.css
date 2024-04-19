@@ -7,7 +7,6 @@
 
 .all-planets-back-home {
   font-family: "Knockout Punch";
-  font-size: 3.5vw;
   color: grey;
   width: 100%;
   text-decoration: none;
@@ -15,4 +14,16 @@
 
 .all-planets-back-home:hover {
   color: rgb(0, 46, 132);
+}
+
+@media only screen and (max-width: 767px) {
+  .all-planets-back-home {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .all-planets-back-home {
+    font-size: 30px; 
+  }
 }

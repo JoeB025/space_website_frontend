@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./PlanetsById.css";
 import { Link } from "react-router-dom";
+import "./Links.css"
 
 export default function PlanetsById() {
   const { planets_id } = useParams();
