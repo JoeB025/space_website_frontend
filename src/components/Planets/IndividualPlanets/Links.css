@@ -1,0 +1,30 @@
+.single-planet-bottom-links {
+  width: 100%; 
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.single-planets-back-home {
+  font-family: 'Knockout Punch';
+  color: grey;
+  width: 100%;
+  text-decoration: none;
+}
+
+.single-planets-back-home:hover {
+  color: rgb(0, 46, 132);
+}
+
+
+@media only screen and (max-width: 767px) {
+  .single-planets-back-home {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .single-planets-back-home {
+    font-size: 25px; 
+  }
+}

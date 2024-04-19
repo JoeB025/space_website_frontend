@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Links.css"
 import "./Loading.css"
+import "./PlanetsMain.css"
+import "./PlanetTop.css"
 
 export default function Planets() {
   const [planetList, setPlanetList] = useState([]);
