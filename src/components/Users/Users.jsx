@@ -34,7 +34,6 @@ export default function Users() {
     <>
       <div className="user-page-container">
         <h1 className="user-page-title">Choose your user</h1>
-
         <section>
           <ul className="list-container">
             {userList.map((user) => {
