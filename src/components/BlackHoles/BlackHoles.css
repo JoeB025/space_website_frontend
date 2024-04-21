@@ -1,19 +1,19 @@
+@media only screen and (max-width: 767px) {
+
 .bh-container {
   background-color: black;
   padding-top: 1px;
 }
 
-
-
 .bh-main-container {
 list-style: none;
-margin-right: 2.777777777vw;
+margin-right: 40px;
 }
 
 .bh-page-title-container {
   color: grey;
   text-align: center;
-  font-size: 2.777777vw;
+  font-size: 3.2vw;
   transition: 2s;
 }
 
@@ -27,7 +27,6 @@ margin-right: 2.777777777vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: rgb(255, 255, 255);
-  font-size: 1.75vw;
   border: solid rgb(14, 14, 23) 2px;
   margin-bottom: 3.5vw;
 }
@@ -48,20 +47,17 @@ margin-right: 2.777777777vw;
 .bh-title {
   color: grey;
   text-align: center;
-  font-size: 2.777777vw;
-  margin-bottom: -5px;
+  font-size: 4vw;
+  margin-bottom: 4px;
   transition: 0.8s;
 }
 
-.bh-title:hover {
-  color:rgb(50, 50, 50);
-  text-decoration: dotted;
-  font-size: 3.5vw;
-}
+
 
 .bh-description-container {
-  font-size: 1.75vw;
+  font-size: 2.2vw;
   color: white;
+  line-height: 3vw;
   text-align: center;
 }
 
@@ -74,14 +70,14 @@ margin-right: 2.777777777vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.5vw;
+  font-size: 2.2vw;
 }
 
 .bh-type-container,
 .bh-distance-container,
 .bh-mass-container {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 8;
+  padding-right: 8%;
   text-align: center;
 }
 
@@ -89,4 +85,103 @@ margin-right: 2.777777777vw;
 .bh-distance-container:hover,
 .bh-mass-container:hover {
   color: rgb(255, 115, 0);
+}
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .bh-container {
+    background-color: black;
+    padding-top: 1px;
+  }
+  
+  .bh-main-container {
+  list-style: none;
+  margin-right: 2.777777777vw;
+  }
+  
+  .bh-page-title-container {
+    color: grey;
+    text-align: center;
+    font-size: 2.777777vw;
+    transition: 2s;
+  }
+  
+  .bh-page-title-container:hover {
+    color: rgb(30, 30, 30);
+  }
+  
+  
+  
+  .bh-data-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: rgb(255, 255, 255);
+    font-size: 1.75vw;
+    border: solid rgb(14, 14, 23) 2px;
+    margin-bottom: 3.5vw;
+  }
+  
+  .bh-data-container:hover {
+    box-shadow: 0px 0px 0.35vw 0.35vw rgb(69, 69, 69);
+  }
+  
+  .bh-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .bh-title {
+    color: grey;
+    text-align: center;
+    font-size: 2.777777vw;
+    margin-bottom: -5px;
+    transition: 0.8s;
+  }
+  
+  .bh-title:hover {
+    color:rgb(50, 50, 50);
+    text-decoration: dotted;
+    font-size: 3.5vw;
+  }
+  
+  .bh-description-container {
+    font-size: 1.75vw;
+    color: white;
+    text-align: center;
+  }
+  
+  .bh-description-container:hover {
+    color: rgb(255, 115, 0);
+  }
+  
+  .bh-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+  }
+  
+  .bh-type-container,
+  .bh-distance-container,
+  .bh-mass-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+  }
+  
+  .bh-type-container:hover,
+  .bh-distance-container:hover,
+  .bh-mass-container:hover {
+    color: rgb(255, 115, 0);
+  }
+
 }

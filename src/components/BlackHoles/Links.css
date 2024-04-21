@@ -1,13 +1,14 @@
+@media only screen and (max-width: 767px) {
+
 .black-holes-bottom-links {
   width: 100%; 
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 .black-holes-back-home {
   font-family: 'Knockout Punch';
-  font-size: 3vw;
+  font-size: 14px;
   color: grey;
   width: 100%;
   text-decoration: none;
@@ -15,4 +16,27 @@
 
 .black-holes-back-home:hover {
   color: rgb(0, 46, 132);
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+  .black-holes-bottom-links {
+    width: 100%; 
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  
+  .black-holes-back-home {
+    font-family: 'Knockout Punch';
+    font-size: 25px;
+    color: grey;
+    width: 100%;
+    text-decoration: none;
+  }
+  
+  .black-holes-back-home:hover {
+    color: rgb(0, 46, 132);
+  }
 }
