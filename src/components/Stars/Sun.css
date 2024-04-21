@@ -1,21 +1,15 @@
+@media only screen and (max-width: 767px) {
+
 .sun-container {
   color: white;
   text-align: center;
-  margin-bottom: 13vw;
-}
-
-.sun-headings-container {
-  font-size: 2vw;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  color: orangered;
-  margin-bottom: -1vw;
-  text-decoration: underline;
+  margin-bottom: 10vw;
+  margin-right: 20px;
 }
 
 .sun-main-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   gap: 4vw;
 }
 
@@ -23,6 +17,7 @@
   font-size: 5vw;
   color: rgb(255, 238, 0);
   transition: 2s;
+  margin-bottom: -20px;
 }
 
 .sun-title-container:hover {
@@ -30,40 +25,51 @@
   color: orangered
 }
 
+.sun-headings-container {
+  font-size: 2vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  color: orangered;
+  margin-bottom: -1vw;
+  text-decoration: underline;
+}
+
 .sun-sub-heading {
   text-align: center;
-  border: solid red 2px;
 }
 
 .sun-facts-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  font-size: 1.75vw;
-  margin-top: -5vw;
+  font-size: 8px;
+  margin-top: 15px;
+  gap: 20px;
 }
 
 .sun-facts:hover {
   color: rgb(216, 101, 0);
 }
 
-.sun-description-container {
-  font-size: 1.75vw;
+.sun-facts-data:hover {
   color: rgb(216, 101, 0);
-  padding-right: 5%;
+}
+
+.sun-description-container {
+  font-size: 11px;
+  color: rgb(216, 101, 0);
   text-align: justify
 }
 
 .sun-bottom-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   justify-content: space-between;
   align-items: center;
   margin-top: 1.75vw;
 }
 
 .sun-description-container-p2 {
-  font-size: 1.75vw;
+  font-size: 11px;
   color: rgb(216, 101, 0);
   text-align: justify;
   padding-right: 10%;
@@ -72,7 +78,7 @@
 
 .sun-image {
   width: 13.5vw;
-  margin-right: 5vw;
+}
 }
 
 
@@ -80,3 +86,90 @@
 
 
 
+
+
+@media only screen and (min-width: 768px) {
+
+  .sun-container {
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  .sun-headings-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: orangered;
+    margin-bottom: -1vw;
+    text-decoration: underline;
+  }
+  
+  .sun-main-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4vw;
+  }
+  
+  .sun-title-container {
+    font-size: 50px;
+    color: rgb(255, 238, 0);
+    transition: 2s;
+  }
+  
+  .sun-title-container:hover {
+    font-size: 70px;
+    color: orangered
+  }
+  
+
+  .sun-facts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 18px;
+  }
+
+  .sun-facts-container:hover {
+    border: solid orangered 2px;
+  }
+  
+  .sun-facts:hover {
+    color: rgb(216, 101, 0);
+  }
+  
+  .sun-description-container {
+    color: rgb(216, 101, 0);
+    /* padding-right: 5%; */
+    text-align: justify;
+  }
+
+  .sun-description {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 19px;
+  }
+  
+  .sun-bottom-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.75vw;
+  }
+  
+  .sun-description-container-p2 {
+    font-size: 19px;
+    color: rgb(216, 101, 0);
+    text-align: justify;
+    padding-right: 10%;
+    padding-left: 10%;
+    line-height: 25px;
+  }
+  
+  .sun-image {
+    width: 13.5vw;
+    margin-right: 5vw;
+  }
+  }
+  
+  

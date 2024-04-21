@@ -30,6 +30,7 @@ export default function GalaxyData() {
 
   return (
     <>
+    
     <div className="galaxy-page-container">
       <h1 className="galaxies-page-header">Galaxies</h1>
       <div className="galaxy-intro-text-container">

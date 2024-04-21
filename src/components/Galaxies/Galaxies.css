@@ -1,3 +1,5 @@
+@media only screen and (max-width: 767px) {
+
 .galaxy-containers {
   padding-left: 3%;
   padding-right: 3%;
@@ -9,7 +11,7 @@
 .galaxies-page-header {
   color: grey;
   text-align: center;
-  font-size: 5vw;
+  font-size: 30px;
 }
 
 .galaxy-intro-text-container {
@@ -21,7 +23,7 @@
   padding-left: 10%;
   padding-right: 10%;
   text-align: justify;
-  font-size: 2vw;
+  font-size: 14px;
   margin-bottom: 3vw;
 }
 
@@ -37,24 +39,16 @@
   text-decoration: underline dotted;
 }
 
-.galaxy-top-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3.5vw;
-}
-
 .galaxy-data-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 1.25vw;
+  align-items: left;
+  font-size: 12px;
   padding-bottom: 4.8vw;
-  padding-top: 4.8vw;
 }
 
 .general-info-container {
-  font-size: 1.5vw;
+  font-size: 14px;
 }
 
 .galaxy-constellation-text:hover,
@@ -66,15 +60,7 @@
 }
 
 .galaxy-main-text {
-  font-size: 1.5vw;
-}
-
-
-
-
-.galaxy-mid-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  font-size: 12px;
 }
 
 .galaxy-img-container {
@@ -94,13 +80,13 @@
 .about-heading {
   text-align: center;
   color: grey;
-  font-size: 3vw;
+  font-size: 16px;
 }
 
 .timeline-heading:hover,
 .observation-heading:hover,
 .about-heading:hover {
-  color: rgb(180, 0, 0);
+  color: rgb(0, 180, 138);
 }
 
 
@@ -108,3 +94,126 @@
 .galaxy-bottom-section {
   margin-bottom: 5vw;
 }
+
+
+}
+
+
+
+/* Large Screen Devices */ 
+
+@media only screen and (min-width: 768px) {
+
+  .galaxy-containers {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    border-top: solid rgb(255, 255, 255) 2px;
+    margin-right: 40px;
+  }
+  
+  .galaxies-page-header {
+    color: grey;
+    text-align: center;
+    font-size: 5vw;
+  }
+  
+  .galaxy-intro-text-container {
+    padding-bottom: 2.5vw;
+  }
+  
+  .galaxy-intro-text {
+    color: grey;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+    font-size: 2vw;
+    margin-bottom: 3vw;
+  }
+  
+  .galaxy-title {
+    text-align: center;
+    font-size: 4vw;
+    color: grey;
+    padding-top: 2.5vw;
+  }
+  
+  .galaxy-title:hover {
+    color: rgb(163, 163, 163);
+    text-decoration: underline dotted;
+  }
+  
+  .galaxy-top-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5vw;
+  }
+  
+  .galaxy-data-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.25vw;
+    padding-bottom: 4.8vw;
+    padding-top: 4.8vw;
+  }
+  
+  .general-info-container {
+    font-size: 1.5vw;
+  }
+  
+  .galaxy-constellation-text:hover,
+  .galaxy-distance-text:hover,
+  .galaxy-size-text:hover,
+  .galaxy-type-text:hover,
+  .galaxy-star-count-text:hover {
+    color: rgb(0, 146, 156);
+  }
+  
+  .galaxy-main-text {
+    font-size: 1.5vw;
+  }
+  
+  
+  
+  
+  .galaxy-mid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .galaxy-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .galaxy-image {
+    width: 21vw;
+    height: 21vw;
+    border-radius: 1.38vw;
+  }
+  
+  .timeline-heading,
+  .observation-heading,
+  .about-heading {
+    text-align: center;
+    color: grey;
+    font-size: 3vw;
+  }
+  
+  .timeline-heading:hover,
+  .observation-heading:hover,
+  .about-heading:hover {
+    color: rgb(180, 0, 0);
+  }
+  
+  
+  
+  .galaxy-bottom-section {
+    margin-bottom: 5vw;
+  }
+  
+  
+  }

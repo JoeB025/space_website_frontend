@@ -99,17 +99,24 @@ export default function StarData() {
                         
                         <div className="sun-facts-container">
                          
-                          <p className="sun-facts">Type: {star.type}</p>
+                          <p className="sun-facts">Type:<p className="sun-fact-data">{star.type}</p></p>
+                          
                           <p className="sun-facts">
-                            Luminosity: {star.luminosity}
+                            Luminosity:
+                            <p className="sun-fact-data">{star.luminosity}</p>
                           </p>
-                          <p className="sun-facts">Age: {star.age}</p>
+                          <p className="sun-facts">Age:
+                          <p className="sun-fact-data">{star.age}</p></p>
 
                           <p className="sun-facts">
-                            Temperature: {star.temperature}
+                            Temperature:
+                            <p className="sun-fact-data">{star.temperature}</p>
                           </p>
-                          <p className="sun-facts">Radius: {star.radius}</p>
-                          <p className="sun-facts">Mass: {star.mass}</p>
+                          <p className="sun-facts">Radius:
+                          <p className="sun-fact-data">{star.radius}</p>
+                          </p>
+                          <p className="sun-facts">Mass:
+                          <p className="sun-fact-data">{star.mass}</p></p>
                         </div>
                         <div className="sun-description-container">
                           <p className="sun-description">
