@@ -1,3 +1,28 @@
+@media only screen and (max-width: 767px) {
+.astronomy-bottom-links {
+  width: 100%; 
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.astronomy-back-home {
+  font-family: 'Knockout Punch';
+  font-size: 14px;
+  color: grey;
+  width: 100%;
+  text-decoration: none;
+}
+
+.astronomy-back-home:hover {
+  color: rgb(0, 46, 132);
+}
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
 .astronomy-bottom-links {
   width: 100%; 
   text-align: center;
@@ -7,7 +32,7 @@
 
 .astronomy-back-home {
   font-family: 'Knockout Punch';
-  font-size: 3.5vw;
+  font-size: 25px;
   color: grey;
   width: 100%;
   text-decoration: none;
@@ -15,4 +40,6 @@
 
 .astronomy-back-home:hover {
   color: rgb(0, 46, 132);
+}
+
 }

@@ -7,12 +7,25 @@
 }
 
 .planet-page-title {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 35px;
+  color: grey;
+  text-decoration: underline;
+}
+
+.planet-page-title:hover {
+  color: rgb(132, 0, 0);
+  text-decoration: underline;
+}
+
+.planet-page-site-title {
   text-align: left;
   font-size: 20px;
   font-weight: bold;
   color: grey;
   font-family: "moondog fifteen";
-  padding-top: 50px;
+  padding-top: 30px;
   padding-left: 40px;
 }
 
@@ -25,6 +38,7 @@
   list-style: none;
   gap: 8vw;
   margin-right: 20px;
+  margin-bottom: 50px;
 }
 
 .planet-image-container-top {
@@ -36,48 +50,57 @@
 .mercury-image-top {
   width: 70%;
   animation: rotation 30s infinite linear;
+  border-radius: 100%;
 }
 
 .venus-image-top {
   width: 90%;
   animation: rotation 30s infinite linear;
+  border-radius: 100%;
 }
 
 .earth-image-top {
   width: 110%;
   animation: rotation 30s infinite linear;
+  border-radius: 100%;
 }
 
 .mars-image-top {
   width: 100%;
   animation: rotation 30s infinite linear;
+  border-radius: 100%;
 }
 
 .jupiter-image-top {
   width: 420%;
   animation: rotation 30s infinite linear;
+  border-radius: 100%;
 }
 
 .saturn-image-top {
   width: 420%;
   animation: rotation 30s infinite linear;
+  border-radius: 100%;
 }
 
 .uranus-image-top {
   width: 200%;
   animation: rotation 30s infinite linear;
+  border-radius: 100%;
 }
 
 .neptune-image-top {
   width: 500%;
   animation: rotation 30s infinite linear;
   margin-left: 2vw;
+  border-radius: 100%;
 }
 
 .pluto-image-top {
   width: 20%;
   animation: rotation 30s infinite linear;
   margin-left: 1vw;
+  border-radius: 100%;
 }
 
 
@@ -87,19 +110,6 @@
 
 
 /* Planet image section mid */
-
-.sub-heading {
-  text-align: center;
-  padding-top: 20px;
-  font-size: 35px;
-  color: grey;
-  text-decoration: underline;
-}
-
-.sub-heading:hover {
-  color: rgb(132, 0, 0);
-  text-decoration: underline;
-}
 
 .planets-intro-text-container {
   padding-left: 40px;
@@ -146,13 +156,26 @@
     margin-top: -10px;
   }
   
-  .planet-page-title {
-    text-align: center;
-    font-size: 10px;
+  .planet-page-site-title {
+    text-align: left;
+    font-size: 2.8vw;
     font-weight: bold;
     color: grey;
     font-family: "moondog fifteen";
     padding-top: 10px;
+    padding-left: 15px;
+  }
+
+  .planet-page-title {
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+    text-decoration: underline;
+  }
+  
+  .planet-page-title:hover {
+    color: rgb(217, 206, 0);
+    text-decoration: underline;
   }
   
   
@@ -216,18 +239,6 @@
     width: 20%;
     animation: rotation 30s infinite linear;
     margin-left: 1vw;
-  }
-  
-  .sub-heading {
-    text-align: center;
-    font-size: 18px;
-    color: grey;
-    text-decoration: underline;
-  }
-  
-  .sub-heading:hover {
-    color: rgb(132, 0, 0);
-    text-decoration: underline;
   }
   
   .planets-intro-text-container {

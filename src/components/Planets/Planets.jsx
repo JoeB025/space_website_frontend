@@ -31,8 +31,9 @@ export default function Planets() {
   return (
     <>
       <div className="container-planets">
-        <h1 className="planet-page-title">Galactic Getaway</h1>
+        <h1 className="planet-page-site-title">Galactic Getaway</h1>
         <section className="planet-img-top-section">
+        <h2 className="planet-page-title">Planets of our Solar System</h2>
           <ul className="planet-image-list-top">
             {planetList.map((img) => {
               let className = "planet-order-images-top"; // Default className
@@ -76,7 +77,6 @@ export default function Planets() {
         </section>
 
         <section>
-          <h3 className="sub-heading">Planets of our Solar System</h3>
           <div className="planets-intro-text-container">
             <p className="planets-intro-text">
               Our solar system is a vast and fascinating collection of celestial

@@ -1,8 +1,10 @@
+@media only screen and (max-width: 767px) {
+
 .all-planet-bottom-links {
   width: 100%;
   text-align: center;
-  padding-top: 3.5vw;
-  padding-bottom: 3.5vw;
+  margin-top: -15px;
+  padding-bottom: 15px;
 }
 
 .all-planets-back-home {
@@ -10,20 +12,31 @@
   color: grey;
   width: 100%;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .all-planets-back-home:hover {
   color: rgb(0, 46, 132);
 }
-
-@media only screen and (max-width: 767px) {
-  .all-planets-back-home {
-    font-size: 14px;
-  }
 }
 
 @media only screen and (min-width: 768px) {
+  .all-planet-bottom-links {
+    width: 100%;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+  }
+  
   .all-planets-back-home {
-    font-size: 30px; 
+    font-family: "Knockout Punch";
+    color: grey;
+    width: 100%;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .all-planets-back-home:hover {
+    color: rgb(0, 46, 132);
   }
 }

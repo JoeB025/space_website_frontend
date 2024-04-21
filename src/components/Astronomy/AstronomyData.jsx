@@ -30,8 +30,8 @@ export default function AstronomyData() {
 return (
   <>
   <div className="cel-ent-container">
-  <h1>Celestial Entities</h1>
-  <p>Welcome to our celestial exploration hub, where the wonders of the cosmos await! Embark on a captivating journey through the vast reaches of space as we delve into the mesmerizing realms of celestial entities. From the majestic planets of our solar system to the distant galaxies scattered across the cosmic expanse, join us as we unravel the mysteries of stars, asteroids, supernovae, and more. Whether you're an avid stargazer or a curious enthusiast, prepare to be inspired by the beauty and complexity of the universe that surrounds us. Let's embark on an astronomical adventure together!</p>
+  <h1 className="cel-ent-title">Celestial Entities</h1>
+  <p className="cel-ent-intro">Welcome to our celestial exploration hub, where the wonders of the cosmos await! Embark on a captivating journey through the vast reaches of space as we delve into the mesmerizing realms of celestial entities. From the majestic planets of our solar system to the distant galaxies scattered across the cosmic expanse, join us as we unravel the mysteries of stars, asteroids, supernovae, and more. Whether you're an avid stargazer or a curious enthusiast, prepare to be inspired by the beauty and complexity of the universe that surrounds us. Let's embark on an astronomical adventure together!</p>
   
 
   
@@ -40,21 +40,25 @@ return (
           <h1>
             {astronomyList.map((data) => {
               return (
-                <li key={data.topic}>
+                <li key={data.topic} className="cel-ent-list-cont">
           <div className="cel-ent-data-container">
-            <p>{data.topic}</p>
-            <p>{data.description}</p>
+            <h2 className="cel-ent-topic">{data.topic}</h2>
 
-            <div className="cel-ent-img-container">
+               <div className="cel-ent-img-container">
                       <img
                         src={data.img_url}
                         className="cel-ent-image"
                         alt={data.topic}
                       />
                     </div>
+
+  
+            </div>                    
+            <p className="cel-ent-desc">{data.description}</p>
+
+         
             
-            
-            </div>
+          
                 </li>
               );
             })}
