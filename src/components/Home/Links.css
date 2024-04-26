@@ -1,8 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .portfolio-link {
   text-align: center;
   font-size: 2.5vw;
   color: gold;
   padding-bottom: 2.5%;
+  text-decoration: none;
 }
 
 .portfolio-link {

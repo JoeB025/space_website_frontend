@@ -102,9 +102,15 @@ const Home = () => {
           })}
         </ul>
 
+<div className="footer">
 
+   <a className="portfolio-link" href="https://jsbentleyportfolio.netlify.app/" target="_blank">Portfolio Link</a>
         <p className="portfolio-link">J Scott-Bentley</p>
-        
+      
+       
+</div>
+
+
       </div>
     </>
   );

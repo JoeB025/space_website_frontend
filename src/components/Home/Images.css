@@ -9,6 +9,7 @@
 
 .home-background-img {
   width: 35vw;
+  max-width: 504px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -26,7 +27,7 @@
 }
 
 .home-background-img-bottom {
-  width: 96vw;
+  width: 98.9vw;
   display: flex;
   justify-content: center;
   align-items: center;
