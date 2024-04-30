@@ -69,7 +69,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -6vw;
+    margin-top: -80px;
+    margin-bottom: 40px;
   }
   
   .single-planet-img {
