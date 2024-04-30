@@ -4,7 +4,6 @@ import "./PageContainer.css";
 import { getGalaxies } from "../../utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./Loading.css"
 
 export default function GalaxyData() {
   const [galaxyList, setGalaxyList] = useState([]);
@@ -22,7 +21,7 @@ export default function GalaxyData() {
   return (
     <>
       <div className="loader-container">
-        <p className="loading-all-articles">Loading Galaxies</p>
+        <p className="loading-text">Loading</p>
         <div className="loader"></div>
       </div>
     </>

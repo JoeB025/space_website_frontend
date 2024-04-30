@@ -5,7 +5,6 @@ import { getStars } from "../../utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Links.css";
-import "./Loading.css"
 
 export default function StarData() {
   const [starsList, setStarsList] = useState([]);
@@ -22,7 +21,7 @@ export default function StarData() {
   return (
     <>
       <div className="loader-container">
-        <p className="loading-all-articles">Loading Stars</p>
+        <p className="loading-text">Loading</p>
         <div className="loader"></div>
       </div>
     </>

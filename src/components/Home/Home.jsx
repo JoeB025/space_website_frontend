@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <>
       <div className="loader-container">
-        <p className="loading-home">Loading</p>
+        <p className="loading-text">Loading</p>
         <div className="loader"></div>
       </div>
     </>

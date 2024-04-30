@@ -23,7 +23,7 @@ export default function PlanetsById() {
   return (
     <>
       <div className="loader-container">
-        <p className="loading-all-articles">Loading {planetsById.name}</p>
+        <p className="loading-text">Loading {planetsById.name}</p>
         <div className="loader"></div>
       </div>
     </>

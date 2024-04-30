@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import "./ArticlesById.css";
 import "./Links.css";
 import { Link } from "react-router-dom";
-import "./Loading.css";
 import ArticleComments from "../../Comments/Comments";
 import LikeCount from "../../LikeButton/Likes";
 import PostUserComments from "../../Comments/PostComments/PostUserComments";
@@ -41,7 +40,7 @@ export default function ArticlesById() {
     return (
       <>
         <div className="loader-container">
-          <p className="loading-all-articles">Loading {articleById.title}</p>
+          <p className="loading-text">Loading {articleById.title}</p>
           <div className="loader"></div>
         </div>
       </>

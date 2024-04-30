@@ -1,7 +1,6 @@
 import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import "./Comments.css";
-import "./Loading.css";
 import { UserContext } from "../Users/singleUser/SingleUser";
 import { deleteComments } from "../../utils";
 
@@ -31,14 +30,14 @@ export default function ArticleComments(props) {
   };
 
   if (loading)
-    return (
-      <>
-        <div className="loader-container">
-          <p className="loading-comments">Loading comments</p>
-          <div className="loader"></div>
-        </div>
-      </>
-    );
+  return (
+    <>
+      <div className="loader-container">
+        <p className="loading-text">Loading</p>
+        <div className="loader"></div>
+      </div>
+    </>
+  );
 
   if (articleComments.length === 0) {
     return (

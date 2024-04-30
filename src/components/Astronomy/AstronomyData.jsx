@@ -3,7 +3,6 @@ import { getAstronomyData } from "../../utils"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import "./Links.css"
-import "./Loading.css"
 
 export default function AstronomyData() {
   const [astronomyList, setAstronomyList] = useState([])
@@ -18,14 +17,14 @@ export default function AstronomyData() {
   }, [])
 
   if (loading)
-    return (
-      <>
-        <div className="loader-container">
-          <p className="loading-all-articles">Loading Celestial Entities</p>
-          <div className="loader"></div>
-        </div>
-      </>
-    );
+  return (
+    <>
+      <div className="loader-container">
+        <p className="loading-text">Loading</p>
+        <div className="loader"></div>
+      </div>
+    </>
+  );
 
 return (
   <>

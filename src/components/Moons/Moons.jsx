@@ -4,7 +4,6 @@ import "./Links.css";
 import { getMoons, getImages } from "../../utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./Loading.css"
 
 export default function Moons() {
   const [moonList, setMoonList] = useState([]);
@@ -29,7 +28,7 @@ export default function Moons() {
   return (
     <>
       <div className="loader-container">
-        <p className="loading-all-articles">Loading</p>
+        <p className="loading-text">Loading</p>
         <div className="loader"></div>
       </div>
     </>

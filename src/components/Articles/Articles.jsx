@@ -1,7 +1,6 @@
 import "./Articles.css";
 import "./Links.css";
 import "./DropDown.css";
-import "./Loading.css";
 import { getArticles, getTopics } from "../../utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -39,7 +38,7 @@ export default function Articles() {
     return (
       <>
         <div className="loader-container">
-          <p className="loading-all-articles">Loading Articles</p>
+          <p className="loading-text">Loading</p>
           <div className="loader"></div>
         </div>
       </>

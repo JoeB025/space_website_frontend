@@ -3,7 +3,6 @@ import { getUsers } from "../../utils";
 import { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Links.css";
-import "./Loading.css";
 import { UserContext } from './singleUser/SingleUser';
 
 export default function Users() {
@@ -21,14 +20,14 @@ export default function Users() {
   }, []);
 
   if (loading)
-    return (
-      <>
-        <div className="loader-container">
-          <p className="loading-all-articles">Loading Users</p>
-          <div className="loader"></div>
-        </div>
-      </>
-    );
+  return (
+    <>
+      <div className="loader-container">
+        <p className="loading-text">Loading</p>
+        <div className="loader"></div>
+      </div>
+    </>
+  );
 
   return (
     <>

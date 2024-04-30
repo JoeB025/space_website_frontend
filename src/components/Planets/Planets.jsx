@@ -2,7 +2,6 @@ import { getPlanets, getImages } from "../../utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Links.css"
-import "./Loading.css"
 import "./PlanetsMain.css"
 import "./PlanetTop.css"
 // import "./PlanetsBottom.css";
@@ -22,7 +21,7 @@ export default function Planets() {
   return (
     <>
       <div className="loader-container">
-        <p className="loading-all-articles">Loading All Planets</p>
+        <p className="loading-text">Loading</p>
         <div className="loader"></div>
       </div>
     </>
