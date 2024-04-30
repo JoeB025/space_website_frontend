@@ -1,3 +1,5 @@
+@media only screen and (max-width: 767px) {
+
 .home-img-container-main {
   display: flex;
   justify-content: center;
@@ -27,8 +29,50 @@
 }
 
 .home-background-img-bottom {
-  width: 98.9vw;
+  width: 96vw;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .home-img-container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-right: 80px;
+    margin-left: 40px;
+  }
+  
+  .home-background-img {
+    width: 35vw;
+    max-width: 504px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .home-img-container-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  
+  .home-background-img-bottom {
+    width: 98.9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
 }
