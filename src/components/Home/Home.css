@@ -12,7 +12,7 @@
 
 .welcome-text {
   color: rgba(255, 255, 255, 0.709);
-  font-size: 2.5vw;
+  font-size: 3vw;
   text-align: center;
   font-family: 'Moondog Fifteen';
 }
@@ -42,7 +42,7 @@
   }
 
   .intro-text {
-    font-size: 12px; 
+    font-size: 12.5px; 
   }
 
 }
@@ -88,7 +88,7 @@
   
 
   .intro-text {
-    font-size: 21px; 
+    font-size: 21.5px; 
   }
 
   .home-container {

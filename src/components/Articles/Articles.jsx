@@ -93,7 +93,7 @@ export default function Articles() {
                       alt={article.title}
                     />
                   </div>
-                  <div className="article-title-container-test">
+                  <div className="article-title-container">
                     <Link
                       to={`/articles/${article.article_id}`}
                       className="article-title"
