@@ -12,7 +12,12 @@ const Header = () => {
         <div className="right">
           <div className="user-header-container">
             <div className="user-header">
-              <p>Logged in: {user.username}</p>
+              <p>
+                {user.username === "Default User"
+                  ? "Choose your user"
+                  : "Logged in: " + user.username}
+
+              </p>
             </div>
             <div className="logged-in-img-container">
               <img
