@@ -1,0 +1,58 @@
+@media only screen and (max-width: 767px) {
+
+.article-sort-buttons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 20px;
+  gap: 5px;
+}
+
+.sort-by-text {
+  color: black;
+  font-size: 14px;
+}
+
+.date-sort-button,
+.likes-sort-button,
+.comments-sort-button {
+  width: 65px;
+  height: 18px;
+  font-size: 8px;
+  border-radius: 20px;
+  background-color: rgba(30, 3, 112, 0.926);
+  color: white;
+  border-color: rgb(0, 76, 95);
+}
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+.article-sort-buttons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 100px;
+  gap: 20px;
+}
+
+.sort-by-text {
+  color: black;
+  font-size: 20px;
+}
+
+.date-sort-button,
+.likes-sort-button,
+.comments-sort-button {
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: rgba(30, 3, 112, 0.926);
+  color: white;
+  border-color: rgb(0, 76, 95);
+}
+}

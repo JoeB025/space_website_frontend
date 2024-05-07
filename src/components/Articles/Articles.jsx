@@ -1,6 +1,7 @@
 import "./Articles.css";
 import "./Links.css";
 import "./DropDown.css";
+import "./SortButtons.css";
 import { getArticles, getTopics } from "../../utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -11,10 +12,13 @@ export default function Articles() {
   const [loading, setLoading] = useState(true);
   const [topicName, setTopicName] = useState([]);
   const [selectedTopic, setSelectedTopic] = useState(null);
+  const [sortBy, setSortBy] = useState("created_at");
+  const [sortOrder, setSortOrder] = useState("desc");
 
   useEffect(() => {
     getArticles().then((response) => {
       setArticleName(response.data.article);
+      console.log(response.data.article);
       setLoading(false);
     });
   }, []);
@@ -34,6 +38,15 @@ export default function Articles() {
     setSelectedTopic(null);
   };
 
+  const sortArticles = (sortByField) => {
+    if (sortBy === sortByField) {
+      setSortOrder(sortOrder === "desc" ? "asc" : "desc");
+    } else {
+      setSortOrder("desc");
+      setSortBy(sortByField);
+    }
+  };
+
   if (loading)
     return (
       <>
@@ -51,10 +64,52 @@ export default function Articles() {
     );
   }
 
+  if (sortBy && sortOrder) {
+    filteredArticles.sort((a, b) => {
+      if (sortBy === "created_at") {
+        return sortOrder === "asc"
+          ? new Date(a.created_at) - new Date(b.created_at)
+          : new Date(b.created_at) - new Date(a.created_at);
+      } else if (sortBy === "votes") {
+        return sortOrder === "asc" ? a.votes - b.votes : b.votes - a.votes;
+      } else if (sortBy === "number_of_comments") {
+        const commentCountA = a.number_of_comments || 0;
+        const commentCountB = b.number_of_comments || 0;
+        return sortOrder === "asc"
+          ? commentCountA - commentCountB
+          : commentCountB - commentCountA;
+      }
+      return 0;
+    });
+  }
+
   return (
     <div className="container">
       <section>
         <h1 className="article-page-title">Articles</h1>
+        <div className="article-sort-buttons">
+          <p className="sort-by-text">Sort By:</p>
+          <button
+            onClick={() => sortArticles("created_at")}
+            className="date-sort-button"
+          >
+            Date {sortBy === "created_at" && (sortOrder === "asc" ? "⬇" : "⬆")}
+          </button>
+          <button
+            onClick={() => sortArticles("votes")}
+            className="likes-sort-button"
+          >
+            Likes {sortBy === "votes" && (sortOrder === "asc" ? "⬇" : "⬆")}
+          </button>
+          <button
+            onClick={() => sortArticles("number_of_comments")}
+            className="comments-sort-button"
+          >
+            Comments
+            {sortBy === "number_of_comments" &&
+              (sortOrder === "asc" ? "⬇" : "⬆")}
+          </button>
+        </div>
         <div className="article-content-container">
           <div className="art-dropdown">
             <p className="art-dropdown-button">Select Your Topic ⌵</p>
@@ -117,9 +172,15 @@ export default function Articles() {
                       </p>
                     </div>
                   </div>
-                  <p className="article-votes">
-                    <LikeCount article={article} />
-                  </p>
+                  <div className="article-votes-comments">
+                    <p className="article-votes">
+                      <LikeCount article={article} />
+                    </p>
+                    <p>
+                      <span className="speech-bubble-icon">💬</span>
+                      {article.number_of_comments}
+                    </p>
+                  </div>
                 </li>
               </h2>
             ))}
