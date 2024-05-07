@@ -10,14 +10,15 @@
 
 .sort-by-text {
   color: black;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .date-sort-button,
 .likes-sort-button,
 .comments-sort-button {
-  width: 65px;
-  height: 18px;
+  width: 70px;
+  text-align: center;
+  height: 15px;
   font-size: 8px;
   border-radius: 20px;
   background-color: rgba(30, 3, 112, 0.926);

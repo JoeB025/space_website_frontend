@@ -93,21 +93,20 @@ export default function Articles() {
             onClick={() => sortArticles("created_at")}
             className="date-sort-button"
           >
-            Date {sortBy === "created_at" && (sortOrder === "asc" ? "⬇" : "⬆")}
+            Date {sortBy === "created_at" && (sortOrder === "asc" ? "↓" : "↑")}
           </button>
           <button
             onClick={() => sortArticles("votes")}
             className="likes-sort-button"
           >
-            Likes {sortBy === "votes" && (sortOrder === "asc" ? "⬇" : "⬆")}
+            Likes {sortBy === "votes" && (sortOrder === "asc" ? "↓" : "↑")}
           </button>
           <button
             onClick={() => sortArticles("number_of_comments")}
             className="comments-sort-button"
           >
-            Comments
-            {sortBy === "number_of_comments" &&
-              (sortOrder === "asc" ? "⬇" : "⬆")}
+            Comments {sortBy === "number_of_comments" &&
+              (sortOrder === "asc" ? "↓" : "↑")}
           </button>
         </div>
         <div className="article-content-container">
