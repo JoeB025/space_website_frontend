@@ -1,107 +1,149 @@
-.single-article-container {
-  background-color: rgb(255, 255, 255);
-}
-
-.single-article-title {
-  text-align: center;
-  color: rgb(253, 101, 74);
-  padding-left: 15%;
-  padding-right: 15%;
-  font-family: 'Moondog Fifteen' 
-}
-
 @media only screen and (max-width: 767px) {
+
+  .single-article-container {
+    background-color: rgb(255, 255, 255);
+  }
+  
   .single-article-title {
-    font-size: 16px; 
+    text-align: center;
+    color: rgb(253, 101, 74);
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: 'Moondog Fifteen';
+    font-size: 16px;
   }
+
+  .single-article-author {
+    text-align: center;
+    color: rgb(253, 101, 74);
+    font-family: 'Moondog Fifteen';
+    font-size: 12px;
+  }
+
+  .single-article-author-name:hover {
+    color: rgb(0, 46, 132);
+  }
+  
+  .single-article-topic {
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  
+  .single-article-img-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .single-article-img {
+    width: 40%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .single-article-body {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    color: rgba(0, 38, 108, 0.912);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+  }
+
+  .single-article-created {
+    text-align: center;
+    font-size: 2.75vw;
+    color: grey;
+  }
+  
+  .votes-comment-count-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: rgb(225, 79, 79);
+    align-items: center;
+    font-size: 2vw;
+  }
+  
+  .single-article-votes {
+    font-size: 4vw;
+  }
+
 }
 
+
+
+
 @media only screen and (min-width: 768px) {
+
+
+  .single-article-container {
+    background-color: rgb(255, 255, 255);
+  }
+  
   .single-article-title {
-    font-size: 50px; /* Adjust the font size for larger screens */
+    text-align: center;
+    color: rgb(253, 101, 74);
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: 'Moondog Fifteen';
+    font-size: 50px; 
   }
-}
 
-
-.single-article-author {
-  text-align: center;
-  font-size: 3vw;
-  color: rgb(253, 101, 74);
-  font-family: 'Moondog Fifteen'
-}
-
-@media only screen and (max-width: 767px) {
   .single-article-author {
-    font-size: 12px; 
+    text-align: center;
+    color: rgb(253, 101, 74);
+    font-family: 'Moondog Fifteen';
+    font-size: 30px;
   }
-}
 
-@media only screen and (min-width: 768px) {
-  .single-article-author {
-    font-size: 30px; /* Adjust the font size for larger screens */
+  .single-article-author-name:hover {
+    color: rgb(0, 46, 132);
   }
-}
+  
+  .single-article-topic {
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  
+  .single-article-img-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .single-article-img {
+    width: 40%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
 
-
-
-.single-article-author-name:hover {
-  color: rgb(0, 46, 132);
-}
-
-.single-article-topic {
-  padding: 20px;
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-}
-
-.single-article-img-container {
-  display: flex;
-  justify-content: center;
-}
-
-.single-article-img {
-  width: 40%;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-
-.single-article-body {
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: justify;
-  color: rgba(0, 38, 108, 0.912);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-@media only screen and (max-width: 767px) {
   .single-article-body {
-    font-size: 12px; 
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    color: rgba(0, 38, 108, 0.912);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
   }
-}
 
-@media only screen and (min-width: 768px) {
-  .single-article-body {
-    font-size: 20px; /* Adjust the font size for larger screens */
+  .single-article-created {
+    text-align: center;
+    font-size: 2.75vw;
+    color: grey;
   }
+  
+  .votes-comment-count-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: rgb(225, 79, 79);
+    align-items: center;
+    font-size: 2vw;
+  }
+  
+  .single-article-votes {
+    font-size: 4vw;
+  }
+
 }
-
-.single-article-created {
-  text-align: center;
-  font-size: 2.75vw;
-  color: grey;
-}
-
-.votes-comment-count-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  color: rgb(225, 79, 79);
-  align-items: center;
-  font-size: 2vw;
-}
-
-.single-article-votes {
-  font-size: 4vw;
-}
-
-

@@ -6,27 +6,27 @@
 
 .user-page-title {
   text-align: center;
-  font-size: 5vw;
+  font-size: 25px;
   color: black;
 }
 
 .list-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2vw;
+  gap: 5px;
   color: black;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   list-style: none;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-right: 40px;
 }
 
 .user-container-main {
   border: solid rgb(0, 0, 0) 3px;
   border-radius: 1vw;
-  width: 28vw;
+  width: 25%;
 }
 
 .user-container-main:hover {
@@ -39,32 +39,33 @@
   align-items: center;
 }
 
-.user-name,
-.user-username {
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
+.user-info-container {
+  width: 100%;
+  font-size: 7px;
 }
 
-.user-name {
-  font-size: 2.5vw;
-}
-
-.user-username {
+/* .user-name {
   font-size: 2.25vw;
 }
 
+.user-username {
+  font-size: 2vw;
+} */
+
 .user-img-container {
-  margin: 5px;
+  margin: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .user-img {
-  width: 6vw;
+  width: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10%;
 }
 
 }
