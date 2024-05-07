@@ -5,7 +5,7 @@ export const UserContext = createContext()
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState({
     name : 'Bugs Bunny',
-    username: 'BigCarrot1940',
+    username: 'Default User',
     avatar_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Bugs_Bunny.svg/800px-Bugs_Bunny.svg.png' 
   });
 
@@ -16,5 +16,8 @@ export const UserProvider = ({ children }) => {
       </UserContext.Provider>
   );
 }
+
+
+
 
 

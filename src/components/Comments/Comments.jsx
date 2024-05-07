@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import "./Comments.css";
 import { UserContext } from "../Users/singleUser/SingleUser";
 import { deleteComments } from "../../utils";
+import CommentVotes from "../CommentVotes/CommentVotes"
 
 export default function ArticleComments(props) {
   const { articleComments, setArticleComments } = props;
@@ -62,8 +63,8 @@ export default function ArticleComments(props) {
 
                   <div className="comment-body-votes-container">
                     <p className="comment-text">{comments.body}</p>
-                    <p className="comment-data-votes">
-                      Votes: {comments.votes}
+                    <p className="comment-data-votes">    
+                      <CommentVotes comment={comments} />
                     </p>
                   </div>
 
