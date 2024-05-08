@@ -6,6 +6,7 @@ import { getArticles, getTopics } from "../../utils";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import LikeCount from "../LikeButton/Likes";
+import NewArticle from "./PostArticles/PostNewArticle";
 
 export default function Articles() {
   const [articleName, setArticleName] = useState([]);
@@ -18,7 +19,6 @@ export default function Articles() {
   useEffect(() => {
     getArticles().then((response) => {
       setArticleName(response.data.article);
-      console.log(response.data.article);
       setLoading(false);
     });
   }, []);
@@ -187,6 +187,10 @@ export default function Articles() {
         </div>
       </section>
 
+      <div>
+        <NewArticle/>
+      </div>
+
       <div className="all-article-bottom-links">
         <Link to="/" className="articles-back-home">
           Home
@@ -195,3 +199,8 @@ export default function Articles() {
     </div>
   );
 }
+
+
+
+
+

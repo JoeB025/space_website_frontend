@@ -67,9 +67,19 @@ export function insertComments(article_id, body, username) {
 };
 
 export function deleteComments(comment_id) {
-  return spaceWebsiteApi.delete(`api/comments/${comment_id}`)
+  return spaceWebsiteApi.delete(`/api/comments/${comment_id}`)
 }
 
 export function updateCommentVotes(comment_id) {
   return spaceWebsiteApi.patch(`/api/comments/${comment_id}`, {inc_votes: 1})
 }
+
+
+export function postArticle(articleData) {
+  console.log('object', articleData);
+  return spaceWebsiteApi.post("/api/articles", articleData);
+}
+
+
+
+
