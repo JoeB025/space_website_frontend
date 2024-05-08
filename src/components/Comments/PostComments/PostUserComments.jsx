@@ -23,10 +23,16 @@ export default function PostUserComments(props) {
         body: body,
         author: user.username,
         votes: "0",
-        created_at: ""
+        created_at: new Date().toISOString()
       };
+      console.log(commentObj, 'new comment data');
       return [commentObj, ...currComments];
     });
+
+    // the new comment data above logs only those obj keys. 
+    // it does not log article_id
+
+    //console.log('new comment data', commentObj)
 
     insertComments(article_id, body, user.username)
       .then((response) => {
